@@ -32,22 +32,22 @@
 
 ::-moz-selection {
   background-color: #292121;
-  color: #f37b53;
+  color: #FD971F;
 }
 
 ::selection {
   background-color: #292121;
-  color: #f37b53;
+  color: #FD971F;
 }
 
 a::-moz-selection {
   color: #292121;
-  background-color: #f37b53;
+  background-color: #FD971F;
 }
 
 a::selection {
   color: #292121;
-  background-color: #f37b53;
+  background-color: #FD971F;
 }
 
 * {
@@ -65,16 +65,17 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  color: #f5f3f3;
-  background-color: #292121;
+  color: #292121;
+  background-color: #e2e2e2;
 }
 
 a {
-  color: #f37b53;
+  color: #FD971F;
   text-decoration: none;
 }
 
 #first-nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,15 +90,25 @@ a {
       flex-basis: 250px;
   max-width: 250px;
   min-height: 100vh;
-  background: #f37b53;
-  background: linear-gradient(45deg, #292121 0%, #f37b53 82%);
+  background: #292121;
+  background: linear-gradient(45deg, #292121 0%, #292121 82%);
   border-radius: 8rem 0 8rem 0;
 }
 
 #first-nav figure img {
-  max-width: 95%;
+  width: 95%;
   border-radius: 50%;
   margin: 5px 0 0 5px;
+}
+
+#first-nav::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 118px solid #f92631;
+  border-right: 118px solid #e2e2e2;
+  width: 0;
 }
 
 #second-nav {
@@ -120,9 +131,13 @@ a {
 #second-nav .nav-container {
   -webkit-box-shadow: 0 -3.5rem 3rem 0 #000;
           box-shadow: 0 -3.5rem 3rem 0 #000;
-  border-left: solid 5px #f37b53;
+  border-left: solid 5px #FD971F;
   min-height: calc(100vh - 50px);
   padding: 30px;
+}
+
+#second-nav .nav-container .social-icon-container .social-icon a {
+  color: #292121;
 }
 
 #second-nav .nav-container .social-icon-container .social-icon a svg {
@@ -164,8 +179,8 @@ main .cursor {
 
 main header {
   margin-bottom: 35px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f37b53), to(#ff5c26));
-  background-image: linear-gradient(180deg, #f37b53 0%, #ff5c26 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FD971F), to(#f92631));
+  background-image: linear-gradient(180deg, #FD971F 0%, #f92631 100%);
   color: #292121;
   border-bottom-right-radius: 8rem;
   padding: 45px;
@@ -286,10 +301,13 @@ main section {
     max-width: 50%;
     border-radius: 0;
     min-height: 70px;
-    background: #f37b53;
+    background: #FD971F;
   }
   #first-nav figure img {
     display: none;
+  }
+  #first-nav::after {
+    border: none;
   }
   #second-nav {
     -webkit-box-ordinal-group: 3;
@@ -299,7 +317,7 @@ main section {
         flex-basis: 50%;
     max-width: 50%;
     min-height: 70px;
-    background-color: #f37b53;
+    background-color: #FD971F;
   }
   #second-nav .nav-container {
     -webkit-box-shadow: none;

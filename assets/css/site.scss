@@ -3,11 +3,11 @@
 $primary: #292121;
 /* $secondary: #28272A; */
 /* $secondary: #E5E7E9; */
-$secondary: #f5f3f3;
+$secondary: #e2e2e2;
 /* $third: #B42024; */
 /* $third: #49E992; */
-$third: #f37b53;
-$third-darken: #ff5c26;
+$third: #FD971F;
+$third-darken: #f92631;
 @font-face {
     font-family: "MoskExtra-Bold800";
     src: url("../fonts/MoskExtra-Bold800.ttf") format("truetype"),
@@ -46,27 +46,37 @@ body{
     margin: 0;
     display: flex;
     flex-flow: row wrap;
-    color: $secondary;
-    background-color: $primary;
+    color: $primary;
+    background-color: $secondary;
 }
 a{
     color: $third;
     text-decoration: none;
 }
 #first-nav{
+    position: relative;
     display: flex;
     flex-direction: column;
     flex: 1;
     flex-basis: 250px;
     max-width: 250px;
     min-height: 100vh;
-    background: $third;
-    background: linear-gradient(45deg, $primary 0%, $third 82%);
+    background: $primary;
+    background: linear-gradient(45deg, $primary 0%, $primary 82%);
     border-radius: 8rem 0 8rem 0;
     figure img{
-        max-width: 95%;
+        width: 95%;
         border-radius: 50%;
         margin: 5px 0 0 5px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-top: 118px solid $third-darken;
+        border-right: 118px solid $secondary;
+        width: 0;
     }
 }
 #second-nav{
@@ -84,6 +94,7 @@ a{
         .social-icon-container{
             .social-icon{
                 a{
+                    color: $primary;
                     svg{
                         font-size: 40px;
                     }
@@ -205,6 +216,9 @@ main{
         background: $third;
         figure img{
             display: none;
+        }
+        &::after {
+            border: none;
         }
     }
     #second-nav{
