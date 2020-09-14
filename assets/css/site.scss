@@ -1,22 +1,8 @@
-/*$primary: #E5E7E9;*/
-/* $primary: #052529; */
 $primary: #292121;
-/* $secondary: #28272A; */
-/* $secondary: #E5E7E9; */
-$secondary: #e2e2e2;
-/* $third: #B42024; */
-/* $third: #49E992; */
+$secondary: #e4e4e4;
 $third: #FD971F;
 $third-darken: #f92631;
-@font-face {
-    font-family: "MoskExtra-Bold800";
-    src: url("../fonts/MoskExtra-Bold800.ttf") format("truetype"),
-    url("../fonts/MoskExtra-Bold800.woff") format("woff"),
-    url("../fonts/MoskExtra-Bold800.woff2") format("woff2");
-    
-    font-weight: normal;
-    font-style: normal;
-}
+$third-clear: #ffc0a2;
 @font-face {
     font-family: "JetBrainsMono-Medium";
     src:url("../fonts/JetBrainsMono-Medium.woff") format("woff"),
@@ -30,65 +16,87 @@ $third-darken: #f92631;
         opacity: 0.1;
     }
 }
-::selection {
-    background-color: $primary;
-    color: $third;
+@keyframes perspectiveAnimation {
+    from {
+        transform-origin: 0 100%;
+    }
+    to {
+        transform: perspective(140px) rotateY(-2deg);
+    }
 }
-a::selection{
-    color: $primary;
-    background-color: $third;
+::selection {
+    background-color: $third-clear;
 }
 *{
     box-sizing: border-box;
 }
 body{
-    font-family: "JetBrainsMono-Medium";
+    position: relative;
+    font-family: 'Bebas Neue', cursive;
     margin: 0;
     display: flex;
     flex-flow: row wrap;
     color: $primary;
-    background-color: $secondary;
+    background: linear-gradient(85deg, $secondary 0%, $third-clear 100%);
+    letter-spacing: 0.06rem;
 }
 a{
-    color: $third;
+    background: linear-gradient(85deg, $third -70%, $third-darken 120%);
+    -webkit-text-fill-color: transparent;
     text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #first-nav{
-    position: relative;
+    position: sticky;
+    top: 0;
+    height: 80vh;
+    margin-left: -40px;
+    z-index: 2;
+    transform: skewX(-4deg);
     display: flex;
     flex-direction: column;
     flex: 1;
-    flex-basis: 250px;
-    max-width: 250px;
-    min-height: 100vh;
+    flex-basis: 290px;
+    max-width: 290px;
     background: $primary;
-    background: linear-gradient(45deg, $primary 0%, $primary 82%);
-    border-radius: 8rem 0 8rem 0;
-    figure img{
-        width: 95%;
+    .avatar {
+        background-image: linear-gradient(-230deg, rgba($third, 0.6), rgba($third-darken, 0.5)), url("../images/avatar.jpg");
+        width: 230px;
+        height: 230px;
         border-radius: 50%;
-        margin: 5px 0 0 5px;
+        transform: skewY(4deg);
+        padding: 70px;
+        background-size: cover;
+        margin-left: 35px;
+        margin-top: 25px;
     }
     &::after {
         content: '';
         position: absolute;
-        bottom: 0;
+        bottom: -100px;
         right: 0;
-        border-top: 118px solid $third-darken;
-        border-right: 118px solid $secondary;
-        width: 0;
+        border-bottom: 172px solid;
+        border-right: 250px solid;
+        transform: skewY(-32deg);
+        z-index: -1;
     }
 }
 #second-nav{
+    background: linear-gradient(-230deg, $secondary 0%, $third-clear 100%);
     display: flex;
     flex-direction: column;
     flex: 1;
     flex-basis: 100px;
+    height: 100vh;
     max-width: 100px;
-    min-height: 100vh;
+    position: sticky;
+    top: 0;
     .nav-container{
         box-shadow: 0 -3.5rem 3rem 0 #000;
-        border-left: solid 5px $third;
+        border-left: solid 6px $third;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to top, rgba($color: $third-darken, $alpha: 0.95) 0%, $third 100%);
         min-height: calc(100vh - 50px);
         padding: 30px;
         .social-icon-container{
@@ -109,13 +117,14 @@ main{
     flex: 1;
     flex-basis: calc(100% - 350px);
     max-width: calc(100% - 350px);
+    margin-top: -60px;
     h2{
-        font-size: 4vw;
-        line-height: 4.2vw;
+        font-size: 4.7rem;
+        line-height: 4.7rem;
     }
     p, h3{
-        font-size: calc(.45rem + 1vw);
-        line-height: calc(1.6rem + 1vw);
+        font-size: 1.8rem;
+        line-height: calc(1.25rem + 1vw);
     }
     .cursor{
         margin-left: .07em;
@@ -123,16 +132,20 @@ main{
         animation: flashing-cursor 0.8s infinite ease-in;
     }
     header{
-        margin-bottom: 35px;
+        margin: 0 0 35px -30px;
         background-image: linear-gradient(180deg, $third 0%, $third-darken 100%);
         color: $primary;
-        border-bottom-right-radius: 8rem;
-        padding: 45px;
+        padding: 120px 55px 55px 55px;
+        position: relative;
+        overflow: hidden;
         h2{
             position: relative;
-            font-family: "MoskExtra-Bold800";
             visibility: hidden;
-
+            animation: perspectiveAnimation 4s ease;
+            transform: perspective(140px) rotateY(-2deg);
+            max-width: 50vw;
+            margin-top: 20px;
+            
             .autowrite-message-visible {
                 position: absolute;
                 z-index: 10;
@@ -142,7 +155,7 @@ main{
             }
         }
         p{
-            margin-top: 45px;
+            margin: 45px 0 0 18px;
             span:nth-child(1){
                 margin-right: 10px;
             }
@@ -150,9 +163,30 @@ main{
                 margin-left: 10px;
             }
         }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: skewY(-4deg);
+            border-top: 80px solid;
+            width: 70vw;
+        }
+        &::after {
+            content: "";
+            bottom: -18px;
+            left: 0;
+            height: 110px;
+            background: $third-darken;
+            width: 100%;
+            transform: skewY(1deg);
+            position: absolute;
+            z-index: -1;
+        }
     }
     section{
         padding: 30px 200px 20px 45px;
+        p, h3 {transform: rotateX(42deg)}
     }
 }
 .row{
@@ -172,22 +206,137 @@ main{
     justify-content: center;
     padding: 20px;
 }
+.send-message-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 150px;
+    width: 67px;
+    height: 67px;
+    z-index: 1;
+    background-image: linear-gradient(-140deg, $third 0%, $third-darken 100%);
+    border-radius: 50%;
+    border: none;
+    font-size: 32px;
+    box-shadow: 0 1rem 1.6rem 0 rgba($color: $third-darken, $alpha: 0.45);
+}
+.send-message-container {
+    background-color: #fff;
+    position: fixed;
+    padding: 20px;
+    bottom: 50px;
+    right: 270px;
+    border-radius: .22rem;
+    box-shadow: 0px 2rem 3rem -20px #666;
+    min-width: 500px;
+    max-height: 90vh;
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: -50px;
+        background: #fff;
+        width: 90px;
+        height: 42px;
+        bottom: 30px;
+        transform: rotate(40deg);
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: -90px;
+        background: #fff;
+        width: 92px;
+        height: 37px;
+        bottom: 0;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-right: 50px;
+
+        .field {
+            padding: 10px;
+            margin: 15px;
+            label {
+                display: block;
+                font-size: 1.4rem;
+            }
+            input, textarea {
+                width: 300px;
+                max-height: 600px;
+                
+                border: none;
+                border-radius: 0;
+                padding: 7px 0;
+                font-size: 1.1rem;
+                font-family: "JetBrainsMono-Medium";
+                border-bottom: solid 4px $third;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(to left, rgba($color: $third-darken, $alpha: 0.95) 0%, $third 100%);
+            }
+            textarea {
+                min-height: 80px;
+            }
+        }
+        
+        button {
+            position: absolute;
+            bottom: 65px;
+            right: 42px;
+            background: none;
+            border: none;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.4rem;
+        }
+    }
+
+    .server-response {
+        &.active {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    }
+}
 @media only screen and (max-width: 1224px) {
     #first-nav{
-        flex-basis: 150px;
-        max-width: 150px;
-        border-top-left-radius: 5rem;
-    }
-    h2{
-        font-size: 4rem;
-        line-height: 4rem;
+        flex-basis: 180px;
+        max-width: 180px;
+
+        .avatar {
+            padding: 62px;
+            width: 50px;
+            height: 50px;
+        }
     }
     main{
-        flex-basis: calc(100% - 250px);
-        max-width: calc(100% - 250px);
+        flex-basis: calc(100% - 240px);
+        max-width: calc(100% - 240px);
+
+        h2{
+            font-size: 3.7rem;
+            line-height: 3.7rem;
+        }
+        
+        p, h3 {
+            font-size: 1.7rem;
+            line-height: 1.7rem;
+        }
 
         header {
             padding: 30px;
+            
+            .autowrite-message {
+                max-width: 65vw;
+                margin-top: 80px;
+                margin-left: 40px;
+            }
+            p {
+                margin-left: 40px;
+            }
+
         }
         section{
             padding: 30px;
@@ -195,26 +344,59 @@ main{
     }
 }
 @media only screen and (max-width: 1024px) {
-    main{
-        h2{
-            font-size: 2.5rem;
-            line-height: 2.7rem;
-        }
-        p, h3{
-            font-size: 1.2rem;
-            line-height: 2rem;
+    #first-nav{
+        flex-basis: 120px;
+        max-width: 120px;
+        .avatar {
+            width: 50px;
+            width: 50px;
+            padding: 35px;
         }
     }
+    main{
+        flex-basis: calc(100% - 146px);
+        max-width: calc(100% - 146px);
+    }
+    #second-nav {
+        max-width: 65px;
+        flex-basis: 65px;
+
+        .nav-container {
+
+
+            min-height: calc(100vh - 150px);
+
+            .social-icon-container .social-icon {
+                padding: 20px 0;
+    
+                a svg {
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+    .send-message-btn {
+        bottom: 45px;
+        right: 25px;
+        width: 62px;
+        height: 62px;
+    }
+    .send-message-container {
+        right: 135px;
+    }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+
     #first-nav{
+        position: relative;
+        height: inherit;
         order: 1;
-        flex-basis: 50%;
-        max-width: 50%;
+        flex-basis: 0;
+        max-width: 0;
         border-radius: 0;
         min-height: 70px;
-        background: $third;
-        figure img{
+        background: none;
+        .avatar {
             display: none;
         }
         &::after {
@@ -222,15 +404,18 @@ main{
         }
     }
     #second-nav{
+        position: relative;
+        height: inherit;
         order: 2;
-        flex-basis: 50%;
-        max-width: 50%;
+        flex-basis: 100%;
+        max-width: 100%;
         min-height: 70px;
-        background-color: $third;
+        background: none;
         .nav-container{
             box-shadow: none;
             padding: 5px;
             min-height: 70px;
+            border-left: none;
             .social-icon-container{
                 flex-flow: row wrap;
                 justify-content: flex-end;
@@ -250,8 +435,20 @@ main{
         order: 3;
         flex-basis: 100%;
         max-width: 100%;
+        margin-top: -75px;
+        padding-bottom: 100px;
 
         header {
+            .autowrite-message {
+                max-width: 80vw;
+                margin-top: 100px;
+                margin-left: 24px;
+                font-size: 3rem;
+                line-height: 2.8rem;
+            }
+            &::before {
+                width: 0;
+            }
             margin-bottom: 0;
             padding: {
                 top: 7px;
@@ -259,9 +456,56 @@ main{
                 bottom: 25px;
                 left: 25px;
             }
+            p{
+                margin-left: 30px;
+                span:nth-child(1){
+                    margin-right: 0;
+                }
+                span:nth-child(2){
+                    margin-right: 0;
+                }
+            }
         }
         section{
             padding: 25px;
         }
+    }
+    .send-message-btn {
+        
+        width: 62px;
+        height: 62px;
+        &.active {
+            width: 48px;
+            height: 48px;
+            bottom: 382px;
+        }
+    }
+    .send-message-container {
+        bottom: 0;
+        right: 0;
+        left: unset;
+        min-width: unset;
+        padding-bottom: 40px;
+        width: 100%;
+
+        &::before {
+            display: none;
+        }
+
+        .send-message-form {
+            padding-right: 0;
+            .field {
+                input, textarea {
+                    width: 100%;
+                }
+            }
+    
+            button {
+                position: initial;
+                align-self: flex-end;
+                margin: 20px 20px 5px 0;
+            }
+        }
+
     }
 }

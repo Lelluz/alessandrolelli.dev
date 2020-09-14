@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#f37b53"/>
+    <meta name="theme-color" content="#FD971F" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/site.css">
     <title>Alessandro Lelli</title>
@@ -13,28 +14,31 @@
 
 <body>
     <nav id="first-nav">
-        <figure>
-            <img src="assets/images/avatar.jpg" alt="Alessandro Lelli">
-            <figcaption></figcaption>
-        </figure>
+        <div class="avatar"></div>
     </nav>
     <main>
         <header>
-            <h2 class="autowrite-message">Alessandro Lelli ~ Web developer & photographer based in Bologna<span class="autowrite-message-visible"></span></h2>
+            <h2 class="autowrite-message">Alessandro Lelli ~ Web developer & photographer based in Bologna<span
+                    class="autowrite-message-visible"></span></h2>
             <p><span>❝</span>The taste for appereance and design allowed me to develop a strong interest in the creative
                 areas of IT, such as the creation of websites and graphics<span>❞</span></p>
         </header>
         <section id="skills">
-            <h3>I'm full time front-end developer at YOOX-NET-A-PORTER Group, and I have many other interests, among which the passion for
+            <h3>I'm full time front-end developer at YOOX-NET-A-PORTER Group, and I have many other interests, among
+                which the passion for
                 the photography, video making, riding motorbikes and hiking the mountains.</h3>
         </section>
         <section id="recent-works">
             <h3>Recent works:</h3>
-            <p>Websites <a href="https://www.eagledroid.com" target="_blank" rel="noopener">Eagledroid</a>, <a href="http://www.itambiente.com" target="_blank" rel="noopener">ITambiente</a>, <a
+            <p>Websites <a href="https://www.eagledroid.com" target="_blank" rel="noopener">Eagledroid</a>, <a
+                    href="http://www.itambiente.com" target="_blank" rel="noopener">ITambiente</a>, <a
                     href="http://www.cassamutuamipaaf.it" target="_blank" rel="noopener">Cassamutuamipaaf</a></p>
-            <p>Chrome extension <a href="https://chrome.google.com/webstore/detail/modisfill/jmljfedjknpmlidjhiikbmdfaakfmmff?hl=it" target="_blank" rel="noopener">Modisfill</a></p>
-            <p>Photoshop plugins UX <a href="https://old.milkywayhunters.com/prodotto/orionh-plus"
-                    target="_blank" rel="noopener">Orionh Plus</a>, <a href="http://astropanel.angeloperrone.it" target="_blank" rel="noopener">Astro
+            <p>Chrome extension <a
+                    href="https://chrome.google.com/webstore/detail/modisfill/jmljfedjknpmlidjhiikbmdfaakfmmff?hl=it"
+                    target="_blank" rel="noopener">Modisfill</a></p>
+            <p>Photoshop plugins UX <a href="https://old.milkywayhunters.com/prodotto/orionh-plus" target="_blank"
+                    rel="noopener">Orionh Plus</a>, <a href="http://astropanel.angeloperrone.it" target="_blank"
+                    rel="noopener">Astro
                     Panel</a></p>
             <p>Intranet Web CRM</p>
         </section>
@@ -46,13 +50,20 @@
         <div class="nav-container">
             <div class="social-icon-container">
                 <div class="social-icon">
-                    <a href="https://it.linkedin.com/in/alessandro-lelli-02a658155" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/Lelluz" target="_blank" rel="noopener"><i
+                            class="fab fa-github-alt"></i></a>
                 </div>
                 <div class="social-icon">
-                    <a href="https://www.instagram.com/lelluz_ph/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://it.linkedin.com/in/alessandro-lelli-02a658155" target="_blank" rel="noopener"><i
+                            class="fab fa-linkedin-in"></i></a>
                 </div>
                 <div class="social-icon">
-                    <a href="https://www.facebook.com/alelelli.98" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lelluz_ph/" target="_blank" rel="noopener"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+                <div class="social-icon">
+                    <a href="https://www.facebook.com/alelelli.98" target="_blank" rel="noopener"><i
+                            class="fab fa-facebook-f"></i></a>
                 </div>
                 <div class="social-icon">
                     <a href="mailto:alelelli.98@gmail.com"><i class="far fa-envelope"></i></a>
@@ -60,11 +71,43 @@
             </div>
         </div>
     </nav>
+    <button class="send-message-btn">
+        <i class="far fa-paper-plane"></i>
+        <i class="fas fa-times hidden"></i>
+    </button>
+    <div class="send-message-container hidden">
+        <form class="send-message-form" action="">
+            <div class="field">
+                <label for="mail">Email</label>
+                <input type="email" name="mail">
+            </div>
+            <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Send
+                <i class="far fa-paper-plane"></i>
+            </button>
+        </form>
+    </div>
     <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
         integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/validate/dist/validate.min.js"></script>
     <script src="assets/js/autowrite.js"></script>
+    <script src="assets/js/ztext.min.js"></script>
+    <script src="assets/js/sendmessage.js"></script>
+    <script>
+
+        var ztxt = new Ztextify("header > p", {
+            depth: "0px",
+            layers: 1,
+            direction: "both",
+            event: "pointer",
+            eventRotation: "1.5deg",
+            eventDirection: "reverse"
+        });
+
+    </script>
 </body>
 
 </html>

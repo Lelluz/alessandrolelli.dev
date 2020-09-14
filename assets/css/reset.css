@@ -108,8 +108,12 @@ audio:not([controls]) {
  * Known issue: no IE 6 support.
  */
 
-[hidden] {
+[hidden], .hidden {
     display: none;
+}
+
+.invisible {
+    visibility: hidden;
 }
 
 /**
@@ -364,4 +368,3 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
