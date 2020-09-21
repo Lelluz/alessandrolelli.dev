@@ -268,11 +268,6 @@ main section {
   padding: 30px 200px 20px 45px;
 }
 
-main section p, main section h3 {
-  -webkit-transform: rotateX(42deg);
-          transform: rotateX(42deg);
-}
-
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
