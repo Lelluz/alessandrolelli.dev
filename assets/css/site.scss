@@ -3,14 +3,7 @@ $secondary: #e4e4e4;
 $third: #FD971F;
 $third-darken: #f92631;
 $third-clear: #ffc0a2;
-@font-face {
-    font-family: "JetBrainsMono-Medium";
-    src:url("../fonts/JetBrainsMono-Medium.woff") format("woff"),
-    url("../fonts/JetBrainsMono-Medium.woff2") format("woff2");
-    
-    font-weight: normal;
-    font-style: normal;
-}
+
 @keyframes flashing-cursor {
     50% {
         opacity: 0.1;
@@ -64,7 +57,7 @@ a{
         background-image: linear-gradient(-230deg, rgba($third, 0.6), rgba($third-darken, 0.5)), url("../images/avatar.jpg");
         width: 230px;
         height: 230px;
-        border-radius: 50%;
+        border-radius: 60% 40% 60% 35% / 40% 35% 65% 60%;
         transform: skewY(4deg);
         padding: 70px;
         background-size: cover;
@@ -215,6 +208,7 @@ main{
     background-image: linear-gradient(-140deg, $third 0%, $third-darken 100%);
     border-radius: 50%;
     border: none;
+    padding: initial;
     font-size: 32px;
     box-shadow: 0 1rem 1.6rem 0 rgba($color: $third-darken, $alpha: 0.45);
 }
@@ -270,7 +264,8 @@ main{
                 border-radius: 0;
                 padding: 7px 0;
                 font-size: 1.1rem;
-                font-family: "JetBrainsMono-Medium";
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
                 border-bottom: solid 4px $third;
                 border-image-slice: 1;
                 border-image-source: linear-gradient(to left, rgba($color: $third-darken, $alpha: 0.95) 0%, $third 100%);
@@ -321,7 +316,7 @@ main{
         
         p, h3 {
             font-size: 1.7rem;
-            line-height: 1.7rem;
+            line-height: 2rem;
         }
 
         header {

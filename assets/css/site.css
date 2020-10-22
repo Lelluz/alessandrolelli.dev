@@ -1,10 +1,3 @@
-@font-face {
-  font-family: "JetBrainsMono-Medium";
-  src: url("../fonts/JetBrainsMono-Medium.woff") format("woff"), url("../fonts/JetBrainsMono-Medium.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}
-
 @-webkit-keyframes flashing-cursor {
   50% {
     opacity: 0.1;
@@ -105,7 +98,7 @@ a {
   background-image: linear-gradient(-230deg, rgba(253, 151, 31, 0.6), rgba(249, 38, 49, 0.5)), url("../images/avatar.jpg");
   width: 230px;
   height: 230px;
-  border-radius: 50%;
+  border-radius: 60% 40% 60% 35% / 40% 35% 65% 60%;
   -webkit-transform: skewY(4deg);
           transform: skewY(4deg);
   padding: 70px;
@@ -318,6 +311,7 @@ main section {
   background-image: linear-gradient(-140deg, #FD971F 0%, #f92631 100%);
   border-radius: 50%;
   border: none;
+  padding: initial;
   font-size: 32px;
   -webkit-box-shadow: 0 1rem 1.6rem 0 rgba(249, 38, 49, 0.45);
           box-shadow: 0 1rem 1.6rem 0 rgba(249, 38, 49, 0.45);
@@ -386,7 +380,8 @@ main section {
   border-radius: 0;
   padding: 7px 0;
   font-size: 1.1rem;
-  font-family: "JetBrainsMono-Medium";
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   border-bottom: solid 4px #FD971F;
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, rgba(249, 38, 49, 0.95) 0%, #FD971F 100%);
@@ -434,7 +429,7 @@ main section {
   }
   main p, main h3 {
     font-size: 1.7rem;
-    line-height: 1.7rem;
+    line-height: 2rem;
   }
   main header {
     padding: 30px;
