@@ -62,7 +62,7 @@ body {
 }
 
 a {
-  background: linear-gradient(85deg, #FD971F -70%, #f92631 120%);
+  background: linear-gradient(85deg, #fd971f -70%, #f92631 120%);
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   -webkit-background-clip: text;
@@ -128,7 +128,7 @@ a {
   color: red;
   -webkit-transform: rotate(-32deg);
           transform: rotate(-32deg);
-  background: linear-gradient(85deg, #FD971F -70%, #f92631 120%);
+  background: linear-gradient(85deg, #fd971f -70%, #f92631 120%);
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   -webkit-background-clip: text;
@@ -158,9 +158,9 @@ a {
 #second-nav .nav-container {
   -webkit-box-shadow: 0 -3.5rem 3rem 0 #000;
           box-shadow: 0 -3.5rem 3rem 0 #000;
-  border-left: solid 6px #FD971F;
+  border-left: solid 6px #fd971f;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to top, rgba(249, 38, 49, 0.95) 0%, #FD971F 100%);
+  border-image-source: linear-gradient(to top, rgba(249, 38, 49, 0.95) 0%, #fd971f 100%);
   min-height: calc(100vh - 50px);
   padding: 30px;
 }
@@ -195,22 +195,23 @@ main h2 {
   line-height: 4.7rem;
 }
 
-main p, main h3 {
+main p,
+main h3 {
   font-size: 1.7rem;
   line-height: calc(1.25rem + 1vw);
 }
 
 main .cursor {
-  margin-left: .07em;
-  border-right: .12em solid;
+  margin-left: 0.07em;
+  border-right: 0.12em solid;
   -webkit-animation: flashing-cursor 0.8s infinite ease-in;
           animation: flashing-cursor 0.8s infinite ease-in;
 }
 
 main header {
   margin: 0 0 35px -30px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FD971F), to(#f92631));
-  background-image: linear-gradient(180deg, #FD971F 0%, #f92631 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fd971f), to(#f92631));
+  background-image: linear-gradient(180deg, #fd971f 0%, #f92631 100%);
   color: #292121;
   padding: 120px 55px 55px 55px;
   position: relative;
@@ -250,14 +251,14 @@ main header .row .resume {
   background: #292121;
   margin-left: 54px;
   padding: 10px 25px 10px 25px;
-  color: #FD971F;
-  -webkit-text-fill-color: #FD971F;
+  color: #fd971f;
+  -webkit-text-fill-color: #fd971f;
   font-size: 1.4rem;
 }
 
 main header .row .resume svg {
   margin-left: 7px;
-  width: .6em;
+  width: 0.6em;
 }
 
 main header .row .resume::before {
@@ -280,9 +281,9 @@ main header .row p {
   border-radius: 2px;
   font-size: 1.4rem;
   line-height: 2rem;
-  border-left: solid 6px #FD971F;
+  border-left: solid 6px #fd971f;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to top, rgba(249, 38, 49, 0.95) 0%, #FD971F 100%);
+  border-image-source: linear-gradient(to top, rgba(249, 38, 49, 0.95) 0%, #fd971f 100%);
   text-align: center;
 }
 
@@ -306,7 +307,7 @@ main header::before {
 }
 
 main header::after {
-  content: "";
+  content: '';
   bottom: -18px;
   left: 0;
   height: 110px;
@@ -369,7 +370,7 @@ main section {
   width: 67px;
   height: 67px;
   z-index: 1;
-  background-image: linear-gradient(-140deg, #FD971F 0%, #f92631 100%);
+  background-image: linear-gradient(-140deg, #fd971f 0%, #f92631 100%);
   border-radius: 50%;
   border: none;
   padding: initial;
@@ -384,7 +385,7 @@ main section {
   padding: 20px;
   bottom: 50px;
   right: 270px;
-  border-radius: .22rem;
+  border-radius: 0.22rem;
   -webkit-box-shadow: 0px 2rem 3rem -20px #666;
           box-shadow: 0px 2rem 3rem -20px #666;
   min-width: 500px;
@@ -392,7 +393,7 @@ main section {
 }
 
 .send-message-container::before {
-  content: "";
+  content: '';
   position: absolute;
   right: -50px;
   background: #fff;
@@ -404,7 +405,7 @@ main section {
 }
 
 .send-message-container::after {
-  content: "";
+  content: '';
   position: absolute;
   right: -90px;
   background: #fff;
@@ -434,7 +435,8 @@ main section {
   font-size: 1.4rem;
 }
 
-.send-message-container form .field input, .send-message-container form .field textarea {
+.send-message-container form .field input,
+.send-message-container form .field textarea {
   width: 300px;
   max-height: 600px;
   border: none;
@@ -443,9 +445,9 @@ main section {
   font-size: 1.1rem;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  border-bottom: solid 4px #FD971F;
+  border-bottom: solid 4px #fd971f;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to left, rgba(249, 38, 49, 0.95) 0%, #FD971F 100%);
+  border-image-source: linear-gradient(to left, rgba(249, 38, 49, 0.95) 0%, #fd971f 100%);
 }
 
 .send-message-container form .field textarea {
@@ -491,7 +493,8 @@ main section {
     font-size: 3.7rem;
     line-height: 3.7rem;
   }
-  main p, main h3 {
+  main p,
+  main h3 {
     font-size: 1.7rem;
     line-height: 2rem;
   }
@@ -668,7 +671,8 @@ main section {
   .send-message-container .send-message-form {
     padding-right: 0;
   }
-  .send-message-container .send-message-form .field input, .send-message-container .send-message-form .field textarea {
+  .send-message-container .send-message-form .field input,
+  .send-message-container .send-message-form .field textarea {
     width: 100%;
   }
   .send-message-container .send-message-form button {
