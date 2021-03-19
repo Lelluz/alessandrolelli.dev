@@ -1,8 +1,5 @@
-$primary: #292121;
-$secondary: #e4e4e4;
-$third: #fd971f;
-$third-darken: #f92631;
-$third-clear: #ffc0a2;
+@import '_fonts';
+@import '_colors';
 
 @keyframes flashing-cursor {
   50% {
@@ -16,6 +13,19 @@ $third-clear: #ffc0a2;
   to {
     transform: perspective(140px) rotateY(-2deg);
   }
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background-color: $primary;
+}
+::-webkit-scrollbar-thumb {
+  background: $third;
+  border-radius: 5px;
+  border-left: solid 6px $third;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to bottom, rgba($color: $third-darken, $alpha: 0.95) 0%, $third 100%);
 }
 ::selection {
   background-color: $third-clear;
@@ -53,8 +63,7 @@ a {
   max-width: 290px;
   background: $primary;
   .avatar {
-    background-image: linear-gradient(-230deg, rgba($third, 0.6), rgba($third-darken, 0.5)),
-      url('../images/avatar.jpg');
+    background-image: linear-gradient(-230deg, rgba($third, 0.6), rgba($third-darken, 0.5)), url('../images/avatar.jpg');
     width: 230px;
     height: 230px;
     border-radius: 60% 40% 60% 35% / 40% 35% 65% 60%;
@@ -103,11 +112,7 @@ a {
     box-shadow: 0 -3.5rem 3rem 0 #000;
     border-left: solid 6px $third;
     border-image-slice: 1;
-    border-image-source: linear-gradient(
-      to top,
-      rgba($color: $third-darken, $alpha: 0.95) 0%,
-      $third 100%
-    );
+    border-image-source: linear-gradient(to top, rgba($color: $third-darken, $alpha: 0.95) 0%, $third 100%);
     min-height: calc(100vh - 50px);
     padding: 30px;
     .social-icon-container {
@@ -209,11 +214,7 @@ main {
         line-height: 2rem;
         border-left: solid 6px $third;
         border-image-slice: 1;
-        border-image-source: linear-gradient(
-          to top,
-          rgba($color: $third-darken, $alpha: 0.95) 0%,
-          $third 100%
-        );
+        border-image-source: linear-gradient(to top, rgba($color: $third-darken, $alpha: 0.95) 0%, $third 100%);
         text-align: center;
       }
     }
@@ -319,7 +320,7 @@ main {
       }
       input,
       textarea {
-        width: 300px;
+        width: 350px;
         max-height: 600px;
 
         border: none;
@@ -330,11 +331,7 @@ main {
         font-weight: 500;
         border-bottom: solid 4px $third;
         border-image-slice: 1;
-        border-image-source: linear-gradient(
-          to left,
-          rgba($color: $third-darken, $alpha: 0.95) 0%,
-          $third 100%
-        );
+        border-image-source: linear-gradient(to left, rgba($color: $third-darken, $alpha: 0.95) 0%, $third 100%);
       }
       textarea {
         min-height: 80px;
@@ -343,8 +340,8 @@ main {
 
     button {
       position: absolute;
-      bottom: 65px;
-      right: 42px;
+      bottom: 40px;
+      right: 15px;
       background: none;
       border: none;
       font-family: 'Bebas Neue', cursive;
@@ -358,6 +355,11 @@ main {
       height: 100px;
       background-color: red;
     }
+  }
+}
+@media screen and (min-width: 1940px) {
+  html {
+    font-size: 2px;
   }
 }
 @media only screen and (max-width: 1224px) {
