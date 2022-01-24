@@ -27,6 +27,11 @@ body {
   font-family: 'Leeague Spartan Bold';
   color: $dark-green;
   padding-bottom: 270px;
+
+  background-color: $light-green;
+  background-image:  linear-gradient(#E4E6E8 1px, transparent 1px), linear-gradient(90deg, #E4E6E8 1px, transparent 1px), linear-gradient(#E4E6E8 0.5px, transparent 0.5px), linear-gradient(90deg, #E4E6E8 0.5px, $light-green 0.5px);
+  background-size: 25px 25px, 25px 25px, 5px 5px, 5px 5px;
+  background-position: -1px -1px, -1px -1px, -0.5px -0.5px, -0.5px -0.5px;
 }
 
 img {
@@ -73,8 +78,9 @@ p, span {
   place-items: center;
 
   .greeting {
-    font-size: 40px;
     margin: 30px 0;
+    font-size: 40px;
+    line-height: 48px;
     
     @media (max-width: $medium-devices) {
       margin: 30px;
@@ -97,6 +103,7 @@ p, span {
   .profession {
     margin: 30px 0;
     font-size: 24px;
+    line-height: 35px;
 
     @media (max-width: $medium-devices) {
       margin: 30px;
@@ -149,6 +156,10 @@ p, span {
   width: 100%;
   overflow: hidden;
   line-height: 0;
+
+  @media (max-width: $small-devices) {
+    display: none;
+  }
 }
 
 .custom-shape-divider-top-1642976371 svg {
@@ -173,6 +184,11 @@ p, span {
   left: 0;
   height: 57px;
   width: 100%;
+  
+  @media (max-width: $small-devices) {
+    background-color: $dark-green;
+    height: 45px;
+  }
 
   ul {
     display: flex;
@@ -191,7 +207,7 @@ p, span {
         font-size: 28px;
 
         @media (max-width: $small-devices) {
-          font-size: 22px;
+          font-size: 20px;
         }
       }
     }
