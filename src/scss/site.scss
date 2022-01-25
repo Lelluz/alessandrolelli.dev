@@ -26,8 +26,7 @@ body {
   background-color: $light-green;
   font-family: 'Leeague Spartan Bold';
   color: $dark-green;
-  padding-bottom: 270px;
-
+  padding-bottom: 180px;
   background-color: $light-green;
   background-image:  linear-gradient(#E4E6E8 1px, transparent 1px), linear-gradient(90deg, #E4E6E8 1px, transparent 1px), linear-gradient(#E4E6E8 0.5px, transparent 0.5px), linear-gradient(90deg, #E4E6E8 0.5px, $light-green 0.5px);
   background-size: 25px 25px, 25px 25px, 5px 5px, 5px 5px;
@@ -73,6 +72,27 @@ p, span {
 
 /* HEADER */
 
+.custom-shape-divider-top-1643150368 {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1643150368 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 280px;
+}
+
+.custom-shape-divider-top-1643150368 .shape-fill {
+  fill: $yellow;
+}
+
 .about-me {
   display: grid;
   place-items: center;
@@ -90,10 +110,6 @@ p, span {
   .avatar {
     max-width: 220px;
     margin: 10px 0;
-
-    @media (max-width: $medium-devices) {
-      margin: 10px;
-    }
 
     img {
       border-radius: 50%;
@@ -124,16 +140,14 @@ p, span {
 .recent-works {
   max-width: 800px;
   margin: 0 auto;
+
+  @media (max-width: $medium-devices) {
+    margin: 0 30px;
+  }
 }
 
-.details-about-me {
-  p {
-    margin: 50px 0;
-
-    @media (max-width: $medium-devices) {
-      margin: 50px 30px;
-    }
-  }
+.details-about-me p {
+  padding: 50px 0;
 }
 
 .recent-works {
@@ -146,7 +160,6 @@ p, span {
 
   @media (max-width: $medium-devices) {
     padding: 30px 0;
-    margin: 0 30px;
   }
 
   > * {
@@ -168,51 +181,22 @@ p, span {
 
 /* FOOTER */
 
-.custom-shape-divider-top-1642976371 {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-
-  @media (max-width: $small-devices) {
-    display: none;
-  }
-}
-
-.custom-shape-divider-top-1642976371 svg {
-  position: relative;
-  display: block;
-  width: calc(158% + 1.3px);
-  height: 150px;
-
-  @media (max-width: $small-devices) {
-    width: calc(270% + 1.3px);
-    height: 107px;
-  }
-}
-
-.custom-shape-divider-top-1642976371 .shape-fill {
-  fill: $dark-green;
-}
-
 .nav-social {
   position: fixed;
   bottom: 0;
   left: 0;
   height: 57px;
   width: 100%;
+  background-color: $dark-green;
   
   @media (max-width: $small-devices) {
-    background-color: $dark-green;
     height: 45px;
   }
 
   ul {
     display: flex;
     height: 100%;
-    max-width: 600px;
+    max-width: 550px;
     margin: 0 auto;
 
     li {
