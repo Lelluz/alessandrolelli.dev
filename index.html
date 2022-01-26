@@ -26,22 +26,27 @@
       <h1 class="greeting">Hi! I'm Alessandro Lelli</h1>
       <div class="avatar">
         <picture>
-          <source srcset="https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_1000.avif" type="image/avif">
+          <source
+            type="image/avif"
+            data-srcset="https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_1000.avif"
+            data-sizes="100w"
+          />
           <img
+            alt="Alessandro Lelli avatar"
+            class="lazy"
             width="220"
             height="220"
-            sizes="(max-width: 1000px) 100vw, 1000px"
-            srcset="
+            data-sizes="(max-width: 1000px) 100vw, 1000px"
+            data-srcset="
             https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_200.jpg 200w,
             https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_482.jpg 482w,
             https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_671.jpg 671w,
             https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_834.jpg 834w,
             https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_985.jpg 985w,
             https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_1000.jpg 1000w"
-            src="https://alessandrolellipersonal.s3.eu-central-1.amazonaws.com/images/avatar2022_ubbq33_c_scale,w_1000.jpg"
-            alt="Alessandro Lelli avatar"
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgL/wAARCAADAAMDAREAAhEBAxEB/8QAFAABAAAAAAAAAAAAAAAAAAAAB//EAB0QAAEFAAMBAAAAAAAAAAAAAAMBAgQFBgcIESH/xAAUAQEAAAAAAAAAAAAAAAAAAAAG/8QAHBEAAQUBAQEAAAAAAAAAAAAAAQIDBBEhEjEA/9oADAMBAAIRAxEAPwAW6gaS53/X7IavXShW9/Y3vJoJk9YMCEhAVHKu2pa0LIlbFCCOINXXwgsaMTERkdvxV9VRz82XCdXFiyVtR2TSU9E0DvqrJ0n0n5RIiRpbyn32UrdXVmub5SEjE0MAAwb6ds/f/9k="
           >
-          </picture>
+        </picture>
       </div>
       <h2 class="profession">Front-end developer and photographer</h2>
       <a class="btn-as-link btn-resume" href="https://rxresu.me/r/h9gbhy" target="_blank" rel="noopener">Look my resume here</a>
@@ -126,13 +131,17 @@
       </li>
     </ul>
   </nav>
+  <script src="js/vanilla-lazyload.js"></script>
   <script
       defer
       src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
       integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
       crossorigin="anonymous"
-    ></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JLSGVH8Z4"></script>
-    <script src="js/gtag.js"></script>
+  ></script>
+  <script>
+    var lazyLoadInstance = new LazyLoad()
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JLSGVH8Z4"></script>
+  <script src="js/gtag.js"></script>
 </body>
 </html>
