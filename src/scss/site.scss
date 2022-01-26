@@ -99,12 +99,12 @@ p, span {
   place-items: center;
 
   .greeting {
-    margin: var(--base-space) 0;
+    margin: var(--base-space);
     font-size: var(--fs-800);
     line-height: var(--lh-800);
     
-    @media (max-width: $medium-devices) {
-      margin: var(--base-space);
+    @media (min-width: $medium-devices-breakpoint) {
+      margin: var(--base-space) 0;
     }
   }
 
@@ -118,19 +118,22 @@ p, span {
   }
 
   .profession {
-    margin: var(--base-space) 0;
     font-size: var(--fs-600);
     line-height: var(--lh-600);
-
-    @media (max-width: $medium-devices) {
-      margin: var(--base-space);
+    margin: var(--base-space);
+    
+    @media (min-width: $medium-devices-breakpoint) {
+      margin: var(--base-space) 0;
     }
   }
 
   .btn-resume {
-    @media (max-width: $small-devices) {
-      place-self: self-start;
-      margin: 0 var(--base-space);
+    place-self: self-start;
+    margin: 0 var(--base-space);
+
+    @media (min-width: $small-devices-breakpoint) {
+      place-self: center;
+      margin: 0;
     }
   }
 }
@@ -140,10 +143,10 @@ p, span {
 .details-about-me,
 .recent-works {
   max-width: 800px;
-  margin: 0 auto;
-
-  @media (max-width: $medium-devices) {
-    margin: 0 var(--base-space);
+  margin: 0 var(--base-space);
+  
+  @media (min-width: $medium-devices-breakpoint) {
+    margin: 0 auto;
   }
 }
 
@@ -153,30 +156,25 @@ p, span {
 
 .recent-works {
   background-color: $white;
-  padding: var(--base-space);
   position: relative;
   z-index: 0;
   border-radius: 4px;
   box-shadow: 12.5px 12.5px 10px rgb(0 0 0 / 4%), 0px 100px 80px rgb(0 0 0 / 7%);
-
-  @media (max-width: $medium-devices) {
-    padding: var(--base-space) 0;
+  
+  .inner {
+    padding: var(--base-space);
   }
 
-  > * {
-    @media (max-width: $medium-devices) {
-      margin-left: var(--base-space);
-      margin-right: var(--base-space);
-    }
-  }
-
-  > h3 {
+  h3 {
     font-size: var(--fs-400);
   }
 
-  > p:not(:last-child) {
-    margin-top: 15px;
-    margin-bottom: 15px;
+  p {
+    margin: 15px 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -186,13 +184,13 @@ p, span {
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 57px;
+  height: 45px;
   width: 100%;
   background-color: $dark-green;
   animation: fadeInUp .35s both;
   
-  @media (max-width: $small-devices) {
-    height: 45px;
+  @media (min-width: $small-devices-breakpoint) {
+    height: 57px;
   }
 
   ul {
@@ -209,10 +207,10 @@ p, span {
 
       a {
         color: $yellow;
-        font-size: 28px;
+        font-size: 20px;
 
-        @media (max-width: $small-devices) {
-          font-size: 20px;
+        @media (min-width: $small-devices-breakpoint) {
+          font-size: 28px;
         }
       }
     }
