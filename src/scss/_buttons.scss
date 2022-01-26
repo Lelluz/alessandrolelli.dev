@@ -9,7 +9,7 @@ button, a.btn-as-link {
   padding: 10px 16px;
   background-color: $yellow;
   color: $dark-green;
-  font-size: $base-font-size;
+  font-size: var(--fs-400);
   cursor: pointer;
   transition: 0.4s;
   box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),

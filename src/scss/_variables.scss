@@ -12,8 +12,41 @@ $dark-green: #314352;
 $light-yellow: #FDE079;
 $yellow: #F2C135;
 
-/* FONTS */
-$base-font-size: 18px;
+/* ROOT VARIABLES */
+:root {
 
-/* SPACES */
-$base-space: 28px;
+  /* FONTS */
+  --fs-400: 1rem;
+  --fs-600: 1.4rem;
+  --fs-800: 2.2rem;
+  --lh-400: 1.875rem;
+  --lh-600: 2.25rem;
+  --lh-800: 3rem;
+
+  /* SPACES */
+  --base-space: 28px;
+}
+
+/* RESPONSIVE VARIABLE UPDATES */
+@media (min-width: 40em) {
+  :root {
+    --fs-400: 1.125rem;
+    --fs-600: 1.5rem;
+    --fs-800: 2.5rem;
+    --lh-400: 1.92rem;
+    --lh-600: 2.35rem;
+    --lh-800: 3.2rem;
+    --base-space: 30px;
+  }
+}
+@media (min-width: 122em) {
+  :root {
+    --fs-400: 1.3rem;
+    --fs-600: 1.7rem;
+    --fs-800: 3rem;
+    --lh-400: 2.3rem;
+    --lh-600: 2.6rem;
+    --lh-800: 3.8rem;
+    --base-space: 40px;
+  }
+}
