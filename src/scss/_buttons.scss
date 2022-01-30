@@ -8,7 +8,7 @@ button, a.btn-as-link {
   border-radius: 4px;
   padding: 10px 16px;
   background-color: $yellow;
-  color: $dark-green;
+  color: $light-green;
   font-size: var(--fs-400);
   cursor: pointer;
   transition: 0.4s;
@@ -17,11 +17,6 @@ button, a.btn-as-link {
   /* box-shadow: 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
   22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
   0px 100px 80px rgba(0, 0, 0, 0.07); */
-
-  &:hover {
-    color: $green;
-    background-color: $light-yellow;
-  }
   
   &:focus {
     box-shadow: 0 0 0 0.27rem rgba($yellow, .5);

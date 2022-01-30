@@ -22,15 +22,11 @@
 }
 
 body {
-  background-color: $light-green;
+  background-color: $dark-green-2;
+  color: $light-green;
   font-family: 'League Spartan Bold';
   letter-spacing: 0.01rem;
-  color: $dark-green;
   padding-bottom: 180px;
-  background-color: $light-green;
-  background-image:  linear-gradient($light-gray 1px, transparent 1px), linear-gradient(90deg, $light-gray 1px, transparent 1px), linear-gradient($light-gray 0.5px, transparent 0.5px), linear-gradient(90deg, $light-gray 0.5px, $light-green 0.5px);
-  background-size: 25px 25px, 25px 25px, 5px 5px, 5px 5px;
-  background-position: -1px -1px, -1px -1px, -0.5px -0.5px, -0.5px -0.5px;
 }
 
 img {
@@ -38,7 +34,7 @@ img {
 }
 
 a {
-  color: $dark-green;
+  color: $white;
   text-decoration: none;
 
   &.text-link {
@@ -51,17 +47,17 @@ a {
       bottom: 1px;
       width: 100%;
       content: '';
-      border-bottom: solid 10px $yellow;
+      border-bottom: solid 10px $light-green;
       transition: 0.4s;
     }
     
-    &:hover {
+    /* &:hover {
       color: $green;
 
       &:before {
         border-bottom: solid 4px $light-yellow;
       }
-    }
+    } */
   }
 }
 
@@ -91,7 +87,7 @@ p, span {
 }
 
 .custom-shape-divider-top-1643150368 .shape-fill {
-  fill: $yellow;
+  fill: $dark-green;
 }
 
 .about-me {
@@ -100,6 +96,7 @@ p, span {
   margin: 0 var(--base-space);
 
   .greeting {
+    color: $light-green;
     margin: var(--base-space) 0;
     font-size: var(--fs-800);
     line-height: var(--lh-800);
@@ -150,7 +147,8 @@ p, span {
     position: relative;
     z-index: 0;
     border-radius: 4px;
-    background-color: $white;
+    color: $white;
+    background-color: $dark-green;
     box-shadow: 12.5px 12.5px 10px rgb(0 0 0 / 4%), 0px 100px 80px rgb(0 0 0 / 7%);
     padding: var(--base-space);
     margin: 0 var(--base-space);
@@ -197,7 +195,7 @@ p, span {
       justify-content: center;
 
       a {
-        color: $yellow;
+        color: $light-green;
         font-size: 20px;
 
         @media (min-width: $small-devices-breakpoint) {
