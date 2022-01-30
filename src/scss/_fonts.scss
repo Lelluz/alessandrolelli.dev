@@ -1,9 +1,10 @@
-$base-font-size: 18px;
-
 @font-face {
-  font-family: 'Leeague Spartan Bold';
-  src: url('../fonts/leaguespartan-bold-webfont.woff2') format('woff2'),
-        url('../fonts/leaguespartan-bold-webfont.woff') format('woff');
+  font-family: 'League Spartan Bold';
+  src:
+    local('League Spartan Bold'),
+    local('League-Spartan-Bold'),
+    url('../fonts/leaguespartan-bold-webfont.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
