@@ -5,15 +5,9 @@ $large-devices-breakpoint: 992px;
 $extralarge-devices-breakpoint: 1200px;
 
 /* COLORS */
-$white: #FFF;
-$black: #000;
+$dark: #191919;
+$primary: #3CAEA3;
 $light-gray: #E4E6E8;
-$light-green: #F5F7F7;
-$green: #495659;
-$dark-green: #314352;
-$dark-green-2: #151d24;
-$light-yellow: #ffe54c;
-$yellow: #ffb300;
 
 /* ROOT VARIABLES */
 :root {
@@ -21,10 +15,10 @@ $yellow: #ffb300;
   /* FONTS */
   --fs-400: 1rem;
   --fs-600: 1.4rem;
-  --fs-800: 2.2rem;
+  --fs-800: 1.7rem;
   --lh-400: 1.875rem;
   --lh-600: 2.25rem;
-  --lh-800: 3rem;
+  --lh-800: 3.2rem;
 
   /* SPACES */
   --base-space: 28px;
@@ -38,7 +32,7 @@ $yellow: #ffb300;
     --fs-800: 2.5rem;
     --lh-400: 1.92rem;
     --lh-600: 2.35rem;
-    --lh-800: 3.2rem;
+    --lh-800: 3.8rem;
     --base-space: 30px;
   }
 }
