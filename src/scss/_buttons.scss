@@ -8,14 +8,15 @@ button, a.btn-as-link {
   padding: 7px 14px;
   background-color: $primary;
   color: $dark;
-  border: solid 4px transparent;
+  border: solid 3px transparent;
+  font-family: 'Rubik Regular';
   font-size: var(--fs-400);
   cursor: pointer;
   transition: 0.4s;
   position: relative;
 
   &:hover {
-    border: solid 4px $primary;
+    border: solid 3px $primary;
     color: $primary;
     background-color: initial;
   }
