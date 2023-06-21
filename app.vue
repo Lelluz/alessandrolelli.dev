@@ -1,7 +1,8 @@
 <template>
   <MouseLight />
-  <div>
-    <header>
+  
+  <div class="absolute w-full grid grid-cols-1 sm:grid-cols-2 gap-5 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <header class="lg:sticky lg:top-0 lg:py-24">
       <h1 class="text-4xl font-bold">{{ name }}</h1>
       <p>{{ jobTitle }}</p>
       <ul>
@@ -12,11 +13,13 @@
       </ul>
     </header>
 
-    <main>
+    <main class="lg:py-24">
       <section id="about">
         <h2>Chi sono</h2>
         <p>{{ bio }}</p>
       </section>
+
+      <br><br><br><br>
 
       <section id="skills">
         <h2>Competenze</h2>
@@ -27,6 +30,8 @@
         </ul>
       </section>
 
+      <br><br><br><br>
+
       <section id="projects">
         <h2>Progetti</h2>
         <div v-for="project in projects" :key="project.id">
@@ -36,16 +41,21 @@
         </div>
       </section>
 
+      <br><br><br><br>
+
       <section id="contact">
         <h2>Contattami</h2>
         <p>Email: {{ email }}</p>
         <p>Telefono: {{ phone }}</p>
       </section>
+
+      <br><br><br><br>
+
+      <footer>
+        <p>© 2023 {{ name }}</p>
+      </footer>
     </main>
 
-    <footer>
-      <p>© 2023 {{ name }}</p>
-    </footer>
   </div>
 </template>
 
