@@ -1,3 +1,9 @@
+<template>
+  <div class="overflow-hidden absolute full-height full-width top-0 left-0 z-index-cover">
+    <div ref="mouseLight" class="mouse-gradient absolute full-height full-width top-0 left-0"></div>
+  </div>
+</template>
+
 <script>
   export default {
     mounted() {
@@ -36,18 +42,13 @@
   };
 </script>
 
-<template>
-  <div class="overflow-hidden absolute full-height full-width top-0 left-0 z-index-cover">
-    <div ref="mouseLight" class="mouse-gradient absolute full-height full-width top-0 left-0"></div>
-  </div>
-</template>
-
 <style scoped>
 .mouse-gradient {
   background: repeating-linear-gradient(to right, #151c25 0%, #1b2430 50%, #1d2733 100%);
   filter: blur(100px);
   opacity: 0.5;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0 0;
@@ -56,6 +57,7 @@
     background-position: -200% 0;
   }
 }
+
 @keyframes width {
   0% {
     width: 100%;

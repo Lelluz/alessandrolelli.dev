@@ -11,7 +11,10 @@ export default defineNuxtConfig({
           rel: 'stylesheet',
           href: 'https://rsms.me/inter/inter.css'
         }
-      ]
-    },
-  }
+      ],
+    }
+  },
+  modules: [
+    '@nuxtjs/tailwindcss'
+  ]
 })

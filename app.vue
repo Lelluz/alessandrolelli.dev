@@ -2,7 +2,7 @@
   <MouseLight />
   <div>
     <header>
-      <h1>{{ name }}</h1>
+      <h1 class="text-4xl font-bold">{{ name }}</h1>
       <p>{{ jobTitle }}</p>
       <ul>
         <li><a href="#about">Chi sono</a></li>
@@ -29,10 +29,10 @@
 
       <section id="projects">
         <h2>Progetti</h2>
-        <div v-for="progetto in projects" :key="progetto.id">
-          <h3>{{ progetto.title }}</h3>
-          <p>{{ progetto.description }}</p>
-          <a :href="progetto.url" target="_blank">Visita il progetto</a>
+        <div v-for="project in projects" :key="project.id">
+          <h3>{{ project.title }}</h3>
+          <p>{{ project.description }}</p>
+          <a :href="project.url" target="_blank">Visita il progetto</a>
         </div>
       </section>
 
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import MouseLight from '~/components/MouseLight.vue';
+import MouseLight from '~/components/MouseLight';
 
 export default {
     data() {
@@ -73,14 +73,12 @@ export default {
                     title: "Progetto 2",
                     description: "Descrizione del Progetto 2",
                     url: "https://www.example.com/progetto2"
-                },
-                // Aggiungi altri progetti qui
+                }
             ],
-            email: "tuamail@example.com",
+            email: "alelelli.98@gmail.com",
             phone: "+39 3406900747"
         };
-    },
-    components: { MouseLight }
+    }
 };
 </script>
 
