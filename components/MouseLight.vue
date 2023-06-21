@@ -44,7 +44,7 @@
 
 <style scoped>
 .mouse-gradient {
-  background: repeating-linear-gradient(to right, #00DC82 0%, #1DE0B1 50%, #36E4DA 100%);
+  background: repeating-linear-gradient(to right, #151c25 0%, #1b2430 50%, #1d2733 100%);
   filter: blur(100px);
   opacity: 0.5;
 }
