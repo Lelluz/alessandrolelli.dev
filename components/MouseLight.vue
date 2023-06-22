@@ -1,5 +1,5 @@
 <template>
-  <div ref="mouseLight" class="mouse-gradient fixed h-full w-full top-0 left-0"></div>
+  <div ref="mouseLight" class="mouse-gradient fixed"></div>
 </template>
 
 <script>
