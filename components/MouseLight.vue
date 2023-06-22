@@ -7,15 +7,11 @@
     mounted() {
       const mouseLight = this.$refs.mouseLight;
       const body = window.document.body;
-      let bodyRect;
 
       function onMouseMove(e) {
-        if (!bodyRect) {
-          bodyRect = body.getBoundingClientRect()
-        }
         const size = Math.max((1000) / 2 / 100, 1)
 
-        mouseLight.style.top = `${e.clientY - bodyRect.y - mouseLight.clientHeight / 2}px`
+        mouseLight.style.top = `${e.clientY - mouseLight.clientHeight / 2}px`
         mouseLight.style.left = `${e.clientX - mouseLight.clientWidth / 2}px`
         mouseLight.style.width = mouseLight.style.height = `${Math.max(Math.round(size * 100), 300)}px`
         mouseLight.style.filter = `blur(${Math.min(Math.max(size * 50, 100), 160)}px)`
