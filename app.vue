@@ -1,7 +1,7 @@
 <template>
   <MouseLight />
   
-  <div class="relative w-full h-screen grid grid-cols-1 lg:grid-cols-2 items-start gap-5 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+  <div class="relative w-full h-screen max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 items-start gap-5 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
     <header class="lg:sticky lg:top-0 lg:max-h-screen lg:py-24">
       <h1 class="text-4xl font-bold">{{ name }}</h1>
       <p>{{ jobTitle }}</p>
