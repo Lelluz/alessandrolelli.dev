@@ -1,8 +1,8 @@
 <template>
   <MouseLight />
   
-  <div class="absolute w-full grid grid-cols-1 sm:grid-cols-2 gap-5 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
-    <header class="lg:sticky lg:top-0 lg:py-24">
+  <div class="relative w-full h-screen grid grid-cols-1 lg:grid-cols-2 items-start gap-5 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <header class="lg:sticky lg:top-0 lg:max-h-screen lg:py-24">
       <h1 class="text-4xl font-bold">{{ name }}</h1>
       <p>{{ jobTitle }}</p>
       <ul>
@@ -50,6 +50,10 @@
       </section>
 
       <br><br><br><br>
+
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ullam at sit? Quaerat, impedit perferendis odit quibusdam nam ex dolore optio esse laudantium? Aperiam quod consectetur eos itaque qui ipsam!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa similique nam facilis explicabo, commodi veniam ullam nihil ex recusandae tenetur quam ab. Eligendi aliquam at quo, quia vel quae blanditiis.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa fuga eligendi inventore cum, fugit odit eveniet provident, dolor vel, asperiores quisquam nostrum dolore assumenda. Dicta itaque aliquid nobis impedit praesentium.
 
       <footer>
         <p>© 2023 {{ name }}</p>
