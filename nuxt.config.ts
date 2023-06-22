@@ -2,6 +2,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
+      htmlAttrs: {
+        class: 'scroll-smooth',
+      },
       link: [
         {
           rel: 'preconnect',
