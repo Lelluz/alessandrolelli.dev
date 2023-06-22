@@ -11,7 +11,7 @@
 
       function onMouseMove(e) {
         if (!bodyRect) {
-          bodyRect = document.querySelector('body')?.getBoundingClientRect()
+          bodyRect = body.getBoundingClientRect()
         }
         const size = Math.max((1000) / 2 / 100, 1)
 
