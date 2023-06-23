@@ -1,7 +1,7 @@
 <template>
   <div
     class="relative w-full max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 items-start gap-5 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
-    <header class="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:flex-col lg:justify-between lg:py-24">
+    <header class="lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:py-24">
       <h1 class="text-5xl font-bold">{{ name }}</h1>
       <p class="text-xl font-semibold mt-3">{{ jobTitle }}</p>
       <p class="mt-4 max-w-xs leading-normal">{{ intro }}</p>
@@ -12,7 +12,7 @@
           <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
-      <ul class="mt-8 flex" aria-label="Social media">
+      <ul class="mt-8 lg:mt-auto flex" aria-label="Social media">
         <li class="mr-5 text-xs">
           <a class="block hover:text-slate-200" href="https://github.com/Lelluz" target="_blank" rel="noreferrer"><span
               class="sr-only">GitHub</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
