@@ -7,7 +7,7 @@
       <p class="mt-4 max-w-xs leading-normal">{{ intro }}</p>
       <nav class="mt-16 w-max hidden lg:block" aria-label="In-page jump links">
         <ul>
-          <li><a href="#about">Chi sono</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#experiences">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
@@ -53,37 +53,95 @@
     </header>
 
     <main class="lg:py-24">
-      <section id="about">
-        <h2>Chi sono</h2>
+      <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
         <p>{{ bio }}</p>
       </section>
 
-      <br /><br /><br /><br />
-
-      <section id="experiences">
-        <h2>Experiences</h2>
-        <div v-for="experience in experiences" :key="experience.id">
-          <h3>{{ experience.title }}</h3>
-          <p>{{ experience.description }}</p>
-          <a :href="experience.url" target="_blank">Visita l'esperienza</a>
+      <section id="experiences" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <ul v-for="experience in experiences" :key="experience.id">
+          <li class="mb-12">
+            <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+              <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+              <header class="z-10 mb-2 mt-1 text-xs font-semibold uppercase tracking-wide text-slate-500 sm:col-span-2" aria-label="July to December 2017">{{ experience.date }}</header>
+              <div class="z-10 sm:col-span-6">
+                <h3 class="font-medium leading-snug text-slate-200">
+                  <div>
+                    <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-purple-300 focus-visible:text-purple-300  group/link text-base" :href="experience.url" target="_blank" rel="noreferrer" aria-label="UI Engineer Co-op at Apple">
+                      <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                      <span>
+                        {{ experience.jobTitle }}
+                        <span class="inline-block">{{ experience.company }}
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                          </svg>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </h3>
+                <p class="mt-2 text-sm leading-normal">{{ experience.description }}</p>
+                <ul class="mt-2 flex flex-wrap" aria-label="Technologies used">
+                  <li v-for="technology in experience.technologies" :key="technology.id" class="mr-1.5 mt-2">
+                    <div class="flex items-center rounded-full bg-purple-400/10 px-3 py-1 text-xs font-medium leading-5 text-purple-300">{{ technology.name }}</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="mt-12">
+          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume.pdf">
+            <span>
+              <span class="border-b border-transparent pb-px transition group-hover:border-purple-300 motion-reduce:transition-none">View Full </span>
+              <span class="whitespace-nowrap">
+                <span class="border-b border-transparent pb-px transition group-hover:border-purple-300 motion-reduce:transition-none">Résumé</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
         </div>
       </section>
 
-      <br /><br /><br /><br />
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div v-for="project in projects" :key="project.id">
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.description }}</p>
-          <a :href="project.url" target="_blank">Visita il progetto</a>
-        </div>
+      <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <ul v-for="project in projects" :key="project.id">
+          <li class="mb-12">
+            <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
+              <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+              <div class="z-10 sm:order-2 sm:col-span-6">
+                <h3>
+                  <a class="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-purple-300 focus-visible:text-purple-300  group/link text-base" :href="project.url" target="_blank" rel="noreferrer" aria-label="Build a Spotify Connected App">
+                    <span class="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
+                    <span class="inline-block">{{ project.title }}
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="inline-block h-4 w-4 shrink-0 transition-transform group-hover/link:-translate-y-1 group-hover/link:translate-x-1 group-focus-visible/link:-translate-y-1 group-focus-visible/link:translate-x-1 motion-reduce:transition-none ml-1 translate-y-px" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"></path>
+                      </svg>
+                    </span>
+                  </a>
+                </h3>
+                <p class="mt-2 text-sm leading-normal">{{ project.description }}</p>
+              </div>
+              <img alt="" loading="lazy" width="200" height="48" decoding="async" data-nimg="1" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" :src="`assets/images/${project.imageName}`" style="color: transparent;">
+            </div>
+          </li>
+        </ul>
       </section>
-
-      <br /><br /><br /><br />
 
       <footer>
-        <p>© 2023 {{ name }}</p>
+        <p>
+          Design Inspired by
+          <a href="https://brittanychiang.com/" class="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300" target="_blank" rel="noreferrer">Brittany Chiang</a>
+          website, but built with
+          <a href="https://nuxt.com/" class="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300" target="_blank" rel="noreferrer">Nuxt</a>
+          from scratch using
+          <a href="https://tailwindcss.com/" class="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300" target="_blank" rel="noreferrer">Tailwind CSS</a>
+          and deployed with
+          <a href="https://www.netlify.com/" class="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300" target="_blank" rel="noreferrer">Netlify</a>.
+          All text is set in the
+          <a href="https://rsms.me/inter/" class="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300" target="_blank" rel="noreferrer">Inter</a>
+          typeface.
+        </p>
       </footer>
     </main>
   </div>
@@ -102,15 +160,34 @@ export default {
       experiences: [
         {
           id: 1,
-          title: "Esperienza 1",
-          description: "Descrizione del Esperienza 1",
+          date: "2000 - present",
           url: "https://www.example.com/Esperienza1",
+          company: "YNAP",
+          jobTitle: "Interface Developer",
+          description: "Descrizione del Esperienza 1",
+          technologies: [
+            {
+              id: 1,
+              name: 'HTML5'
+            },
+            {
+              id: 2,
+              name: 'Javascript'
+            },
+          ]
         },
         {
           id: 2,
-          title: "Esperienza 2",
-          description: "Descrizione del Esperienza 2",
+          date: "1900 - 2000",
           url: "https://www.example.com/Esperienza2",
+          jobTitle: "Interface Developer",
+          description: "Descrizione del Esperienza 2",
+          skills: [
+            {
+              id: 1,
+              skill: 'Java'
+            }
+          ]
         },
       ],
       projects: [
@@ -119,12 +196,7 @@ export default {
           title: "Progetto 1",
           description: "Descrizione del Progetto 1",
           url: "https://www.example.com/progetto1",
-        },
-        {
-          id: 2,
-          title: "Progetto 2",
-          description: "Descrizione del Progetto 2",
-          url: "https://www.example.com/progetto2",
+          imageName: "project1.jpg",
         },
       ],
       email: "alelelli.98@gmail.com",
