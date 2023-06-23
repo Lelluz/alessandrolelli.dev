@@ -8,9 +8,8 @@
       <nav class="mt-16 w-max hidden lg:block" aria-label="In-page jump links">
         <ul>
           <li><a href="#about">Chi sono</a></li>
-          <li><a href="#skills">Competenze</a></li>
-          <li><a href="#projects">Progetti</a></li>
-          <li><a href="#contact">Contattami</a></li>
+          <li><a href="#experiences">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
       </nav>
       <ul class="mt-8 flex" aria-label="Social media">
@@ -61,19 +60,19 @@
 
       <br /><br /><br /><br />
 
-      <section id="skills">
-        <h2>Competenze</h2>
-        <ul>
-          <li>{{ skill1 }}</li>
-          <li>{{ skill2 }}</li>
-          <li>{{ skill3 }}</li>
-        </ul>
+      <section id="experiences">
+        <h2>Experiences</h2>
+        <div v-for="experience in experiences" :key="experience.id">
+          <h3>{{ experience.title }}</h3>
+          <p>{{ experience.description }}</p>
+          <a :href="experience.url" target="_blank">Visita l'esperienza</a>
+        </div>
       </section>
 
       <br /><br /><br /><br />
 
       <section id="projects">
-        <h2>Progetti</h2>
+        <h2>Projects</h2>
         <div v-for="project in projects" :key="project.id">
           <h3>{{ project.title }}</h3>
           <p>{{ project.description }}</p>
@@ -82,24 +81,6 @@
       </section>
 
       <br /><br /><br /><br />
-
-      <section id="contact">
-        <h2>Contattami</h2>
-        <p>Email: {{ email }}</p>
-        <p>Telefono: {{ phone }}</p>
-      </section>
-
-      <br /><br /><br /><br />
-
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum ullam at
-      sit? Quaerat, impedit perferendis odit quibusdam nam ex dolore optio esse
-      laudantium? Aperiam quod consectetur eos itaque qui ipsam! Lorem ipsum
-      dolor sit amet consectetur adipisicing elit. Ipsa similique nam facilis
-      explicabo, commodi veniam ullam nihil ex recusandae tenetur quam ab.
-      Eligendi aliquam at quo, quia vel quae blanditiis. Lorem ipsum dolor sit
-      amet consectetur adipisicing elit. Ipsa fuga eligendi inventore cum, fugit
-      odit eveniet provident, dolor vel, asperiores quisquam nostrum dolore
-      assumenda. Dicta itaque aliquid nobis impedit praesentium.
 
       <footer>
         <p>© 2023 {{ name }}</p>
@@ -116,11 +97,22 @@ export default {
     return {
       name: "Alessandro Lelli",
       jobTitle: "Frontend developer",
-      intro: "Breve introduzione, frase ad effetto su di meeeeeeeeeee",
-      bio: "Una breve descrizione su di te e la tua esperienza professionale.",
-      skill1: "Competenza 1",
-      skill2: "Competenza 2",
-      skill3: "Competenza 3",
+      intro: "I'm a front-end developer who loves to create things on the web. Passionate about landscape photography, videography, motorbikes and alpine hiking",
+      bio: "Hello and welcome to my website! I'm a passionate frontend developer with a keen eye for aesthetics. With over 4 years of professional experience in the industry, I have honed my skills while working at YNAP. However, my love for web development goes beyond my official work, as I often engage in exciting side projects during my free time. I believe in creating visually appealing and user-friendly interfaces that deliver exceptional user experiences. Join me on this journey as I share my expertise, insights, and showcase my portfolio. Let's collaborate and bring your ideas to life!",
+      experiences: [
+        {
+          id: 1,
+          title: "Esperienza 1",
+          description: "Descrizione del Esperienza 1",
+          url: "https://www.example.com/Esperienza1",
+        },
+        {
+          id: 2,
+          title: "Esperienza 2",
+          description: "Descrizione del Esperienza 2",
+          url: "https://www.example.com/Esperienza2",
+        },
+      ],
       projects: [
         {
           id: 1,
