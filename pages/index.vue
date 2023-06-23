@@ -160,11 +160,11 @@ export default {
       experiences: [
         {
           id: 1,
-          date: "2000 - present",
-          url: "https://www.example.com/Esperienza1",
+          date: "May 2019 - Present",
+          url: "https://www.ynap.com/",
           company: "YNAP",
           jobTitle: "Interface Developer",
-          description: "Descrizione del Esperienza 1",
+          description: "In YNAP I started my journey with the role of frontend developer. During these almost 3 years I had the opportunity to contribute to the development and maintenance of large e-commerce in the world of luxury, such as Bottegaventa, Brioni, Yves Saint Laurent, Alaia and Dunhill. This allowed me not only to significantly increase my technical skills in the web fields, but also allowed me to discover the potential of working in a team thanks to agile workflows.",
           technologies: [
             {
               id: 1,
@@ -178,14 +178,27 @@ export default {
         },
         {
           id: 2,
-          date: "1900 - 2000",
-          url: "https://www.example.com/Esperienza2",
-          jobTitle: "Interface Developer",
-          description: "Descrizione del Esperienza 2",
-          skills: [
+          date: "April 2018 - March 2019",
+          url: "https://www.cartsan.it/",
+          jobTitle: "IT Customer Support",
+          description: "My main job was to support customers in using and troubleshooting medical software. Also, given my passion for development, my boss gave me the opportunity to develop internal management for the company. I then learned to program with php, using MySQL as a database and refining my knowledge of HTML and CSS.",
+          technologies: [
             {
               id: 1,
-              skill: 'Java'
+              name: 'Java'
+            }
+          ]
+        },
+        {
+          id: 3,
+          date: "June 2015 - July 2015",
+          url: "http://www.videoarts.eu/",
+          jobTitle: "IT Intern",
+          description: "I worked for a month as an intern at Fabio Mosti's Videoarts Webdesign, a small company that opened me up to the world of work. Fabio allowed me to experiment on the practical side with object-oriented programming, helping me to program a management software for a kennel based on Java.",
+          technologies: [
+            {
+              id: 1,
+              name: 'Java'
             }
           ]
         },
@@ -193,10 +206,66 @@ export default {
       projects: [
         {
           id: 1,
-          title: "Progetto 1",
-          description: "Descrizione del Progetto 1",
-          url: "https://www.example.com/progetto1",
-          imageName: "project1.jpg",
+          title: "OFS APIs Chrome Extension",
+          url: "https://chrome.google.com/webstore/detail/ofs-apis/becbgejehcfbgcgmjmpegigmilmnfelc",
+          description: "This extension is useful for YNAP developers to check the data returned by the api.yoox.biz APIs",
+          imageName: "ofs-api.jpg",
+        },
+        {
+          id: 2,
+          title: "Digitalieuguali",
+          url: "https://digitalieuguali.it/",
+          description: "digitalieuguali.it is the project I created for YOOX. It was a great pleasure to have developed a site that has had an important following in our country, both professionally and humanly.",
+          imageName: "digitalieuguali.jpg",
+        },
+        {
+          id: 3,
+          title: "yDevice Switcher Chrome Extension",
+          url: "http://bit.ly/ydevice-switcher",
+          description: "I created this simple Chrome extension for my team members in YNAP using Javascript",
+          imageName: "y-device-switcher.jpg",
+        },
+        {
+          id: 4,
+          title: "EAGLEDROID Website",
+          url: "https://www.eagledroid.com",
+          description: "Development of the project website.",
+          imageName: "eagledroid.jpg",
+        },
+        {
+          id: 5,
+          title: "Modisfill Chrome Extension",
+          url: "https://chrome.google.com/webstore/detail/modisfill/jmljfedjknpmlidjhiikbmdfaakfmmff?hl=it",
+          description: "Modifill is the Chrome extension that I developed for all Modis and Adecco employees who want to simplify and automate the compilation of their WTC. I developed it to experiment in a practical way the Chrome Extension APIs and the Javascript programming ES6.",
+          imageName: "modisfill.jpg",
+        },
+        {
+          id: 6,
+          title: "Astropanel v3, 5 UX",
+          url: "https://astropanel.it/",
+          description: "Restyling of versions 3, and 5 of the Astropanel plugin for Photoshop.",
+          imageName: "astropanel.jpg",
+        },
+        {
+          id: 7,
+          title: "Cassamutuamipaaf Website (2018 version)",
+          url: "http://www.cassamutuamipaaf.it",
+          description: "Website development based on PHP and MySQL database.",
+          imageName: "",
+        },
+        {
+          id: 8,
+          title: "Orionh Plus UX",
+          url: "https://orionxpro.com/",
+          description: "I created and developed for Milkywayhunters the graphics of one of their most popular plugins for Adobe Photoshop, which helps photographers in the post production of night photographs. Adobe Illustrator to sketch the graphics and HTML with CSS to develop it.",
+          imageName: "orionhplus.jpg",
+        },
+        {
+          id: 9,
+          title: "ITambiente S.r.l Website",
+          url: "http://itambiente.com/",
+          description: "Development of the company website. It allowed me to approach the development of showcase sites and communication with the customer. I improved me with HTML, CSS using Bootstrap 3 framework.",
+          imageName: "itambiente.jpg",
         },
       ],
       email: "alelelli.98@gmail.com",
