@@ -64,7 +64,7 @@
         <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
           <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
         </div>
-        <ul v-for="experience in experiences" :key="experience.id">
+        <ul v-for="experience in experiences" :key="experience.id" class="grouplist">
           <li class="mb-12">
             <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
               <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
@@ -114,7 +114,7 @@
         <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
           <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
         </div>
-        <ul v-for="project in projects" :key="project.id">
+        <ul v-for="project in projects" :key="project.id" class="grouplist">
           <li class="mb-12">
             <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
               <div class="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-slate-800/50 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
@@ -157,8 +157,6 @@
 </template>
 
 <script>
-import MouseLight from "~/components/MouseLight";
-
 export default {
   data() {
     return {
@@ -301,5 +299,13 @@ export default {
       phone: "+39 3406900747",
     };
   },
+  /* mounted() {
+    const elements = this.$el.querySelectorAll('.grouplist');
+    elements.forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        element.style.opacity = '0.5';
+      })
+    });
+  } */
 };
 </script>
