@@ -2,8 +2,8 @@
   <div
     class="relative w-full max-w-screen-xl grid grid-cols-1 lg:grid-cols-2 items-start gap-5 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
     <header class="lg:sticky lg:top-0 lg:flex lg:h-screen lg:flex-col lg:py-24">
-      <h1 class="text-5xl font-bold">{{ name }}</h1>
-      <p class="text-xl font-semibold mt-3">{{ jobTitle }}</p>
+      <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"><a href="/">{{ name }}</a></h1>
+      <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">{{ jobTitle }}</h2>
       <p class="mt-4 max-w-xs leading-normal">{{ intro }}</p>
       <nav class="mt-16 w-max hidden lg:block" aria-label="In-page jump links">
         <ul>
@@ -54,10 +54,16 @@
 
     <main class="lg:py-24">
       <section id="about" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
+        </div>
         <p>{{ bio }}</p>
       </section>
 
       <section id="experiences" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Experience</h2>
+        </div>
         <ul v-for="experience in experiences" :key="experience.id">
           <li class="mb-12">
             <div class="group relative grid pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
@@ -105,6 +111,9 @@
       </section>
 
       <section id="projects" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
+          <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">Projects</h2>
+        </div>
         <ul v-for="project in projects" :key="project.id">
           <li class="mb-12">
             <div class="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
