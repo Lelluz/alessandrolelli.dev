@@ -122,7 +122,7 @@
                 </h3>
                 <p class="mt-2 text-sm leading-normal">{{ project.description }}</p>
               </div>
-              <img alt="" loading="lazy" width="200" height="48" decoding="async" data-nimg="1" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1" :src="`assets/images/${project.imageName}`" style="color: transparent;">
+              <img alt="" loading="lazy" width="200" height="48" decoding="async" data-nimg="1" class="rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1 aspect-[98/61] object-cover" :src="`assets/images/${project.imageName}`" style="color: transparent;">
             </div>
           </li>
         </ul>
@@ -172,7 +172,19 @@ export default {
             },
             {
               id: 2,
-              name: 'Javascript'
+              name: 'Javascript ES6'
+            },
+            {
+              id: 3,
+              name: 'CSS3 - SASS'
+            },
+            {
+              id: 4,
+              name: 'C# .NET Framework'
+            },
+            {
+              id: 5,
+              name: 'Web Components - LitElements'
             },
           ]
         },
@@ -185,8 +197,16 @@ export default {
           technologies: [
             {
               id: 1,
-              name: 'Java'
-            }
+              name: 'PHP'
+            },
+            {
+              id: 2,
+              name: 'HTML'
+            },
+            {
+              id: 3,
+              name: 'CSS'
+            },
           ]
         },
         {
@@ -251,7 +271,7 @@ export default {
           title: "Cassamutuamipaaf Website (2018 version)",
           url: "http://www.cassamutuamipaaf.it",
           description: "Website development based on PHP and MySQL database.",
-          imageName: "",
+          imageName: "cassamutuamipaaf.jpg",
         },
         {
           id: 8,
