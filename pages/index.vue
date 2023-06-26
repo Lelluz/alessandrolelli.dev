@@ -157,7 +157,7 @@
       </section>
 
       <footer>
-        <p>
+        <p class="max-w-md pb-16 text-sm text-slate-500 sm:pb-0">
           Design Inspired by
           <a href="https://brittanychiang.com/" class="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300" target="_blank" rel="noreferrer">Brittany Chiang</a>
           website, but built with
