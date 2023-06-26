@@ -72,7 +72,11 @@
         <div class="sticky top-0 z-20 -mx-6 mb-4 w-screen px-6 py-5 backdrop-blur md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
           <h2 class="text-sm font-bold uppercase tracking-widest text-slate-200 lg:sr-only">About</h2>
         </div>
-        <p>{{ bio }}</p>
+        <p>
+          {{ bio }}
+          <br><br>
+          {{ bio2 }}
+        </p>
       </section>
 
       <section id="experiences" class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
@@ -178,7 +182,8 @@ export default {
       name: "Alessandro Lelli",
       jobTitle: "Frontend developer",
       intro: "I'm a front-end developer who loves to create things on the web. Passionate about landscape photography, videography, motorbikes and alpine hiking",
-      bio: "Hello and welcome to my website! I'm a passionate frontend developer with a keen eye for aesthetics. With over 4 years of professional experience in the industry, I have honed my skills while working at YNAP. However, my love for web development goes beyond my official work, as I often engage in exciting side projects during my free time. I believe in creating visually appealing and user-friendly interfaces that deliver exceptional user experiences. Join me on this journey as I share my expertise, insights, and showcase my portfolio. Let's collaborate and bring your ideas to life!",
+      bio: "During my high school years, I unearthed a profound passion for the intricate art of website aesthetics, where every opportunity became a catalyst for crafting captivating sites.",
+      bio2: "Today, I bring that same enthusiasm and creativity to every project I undertake. Whether it's designing sleek user interfaces or implementing captivating animations, I strive to make every website an immersive and visually stunning experience.",
       experiences: [
         {
           id: 1,
@@ -186,7 +191,7 @@ export default {
           url: "https://www.ynap.com/",
           company: "YNAP",
           jobTitle: "Interface Developer",
-          description: "In YNAP I started my journey with the role of frontend developer. During these almost 3 years I had the opportunity to contribute to the development and maintenance of large e-commerce in the world of luxury, such as Bottegaventa, Brioni, Yves Saint Laurent, Alaia and Dunhill. This allowed me not only to significantly increase my technical skills in the web fields, but also allowed me to discover the potential of working in a team thanks to agile workflows.",
+          description: "At YNAP, my journey began as a frontend developer, a role that has shaped my path for nearly three years. During this time, I had the privilege of making substantial contributions to the development and maintenance of renowned luxury e-commerce platforms like Bottega Veneta, Brioni, Yves Saint Laurent, Alaïa, and Dunhill. This experience not only honed my technical expertise in web-related domains but also exposed me to the power of collaborative teamwork through agile workflows.",
           technologies: [
             {
               id: 1,
@@ -215,7 +220,7 @@ export default {
           date: "April 2018 - March 2019",
           url: "https://www.cartsan.it/",
           jobTitle: "IT Customer Support",
-          description: "My main job was to support customers in using and troubleshooting medical software. Also, given my passion for development, my boss gave me the opportunity to develop internal management for the company. I then learned to program with php, using MySQL as a database and refining my knowledge of HTML and CSS.",
+          description: "In addition to my primary responsibility of providing customer support and troubleshooting medical software, I was fortunate to have my boss recognize my passion for development. This led to an exciting opportunity where I was entrusted with developing an internal management system for the company. Through this experience, I acquired proficiency in PHP programming, utilizing MySQL as a database, and further refining my knowledge of HTML and CSS.",
           technologies: [
             {
               id: 1,
@@ -236,7 +241,7 @@ export default {
           date: "June 2015 - July 2015",
           url: "http://www.videoarts.eu/",
           jobTitle: "IT Intern",
-          description: "I worked for a month as an intern at Fabio Mosti's Videoarts Webdesign, a small company that opened me up to the world of work. Fabio allowed me to experiment on the practical side with object-oriented programming, helping me to program a management software for a kennel based on Java.",
+          description: "As an intern at Fabio Mosti's Videoarts Webdesign, a small yet impactful company, I had the opportunity to immerse myself in the professional world. Under Fabio's guidance, I delved into the realm of object-oriented programming and embarked on a practical journey. During my tenure, I successfully developed a Java-based management software specifically tailored for a kennel. This invaluable experience further expanded my practical skills and solidified my understanding of software development.",
           technologies: [
             {
               id: 1,
