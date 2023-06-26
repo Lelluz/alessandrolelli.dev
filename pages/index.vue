@@ -5,11 +5,26 @@
       <h1 class="text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl"><a href="/">{{ name }}</a></h1>
       <h2 class="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">{{ jobTitle }}</h2>
       <p class="mt-4 max-w-xs leading-normal">{{ intro }}</p>
-      <nav class="mt-16 w-max hidden lg:block" aria-label="In-page jump links">
+      <nav class="nav mt-16 w-max hidden lg:block" aria-label="In-page jump links">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experiences">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="#about" class="group flex items-center py-3">
+              <span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+              <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span>
+            </a>
+          </li>
+          <li>
+            <a href="#experiences" class="group flex items-center py-3">
+              <span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+              <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="group flex items-center py-3">
+              <span class="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
+              <span class="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Projects</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <ul class="mt-8 lg:mt-auto flex" aria-label="Social media">
@@ -299,13 +314,38 @@ export default {
       phone: "+39 3406900747",
     };
   },
-  /* mounted() {
-    const elements = this.$el.querySelectorAll('.grouplist');
+  mounted() {
+    /* const elements = this.$el.querySelectorAll('.grouplist');
     elements.forEach(element => {
       element.addEventListener('mouseenter', () => {
         element.style.opacity = '0.5';
       })
+    }); */
+
+    const links = this.$el.querySelectorAll('.nav a');
+    const sections = this.$el.querySelectorAll("main > section");
+    const options = { threshold: 0.6 };
+
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        links.forEach((link) => link.classList.remove('active'));
+        link.classList.add('active');
+      });
     });
-  } */
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const targetId = entry.target.getAttribute("id");
+          const targetLink = this.$el.querySelector('nav a[href="#' + targetId + '"]');
+          links.forEach((link) => link.classList.remove("active"));
+          targetLink.classList.add("active");
+        }
+      });
+    }, options);
+
+    sections.forEach((section) => observer.observe(section));
+
+  }
 };
 </script>

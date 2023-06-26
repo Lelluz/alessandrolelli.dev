@@ -9,7 +9,7 @@
       const body = window.document.body;
 
       function onMouseMove(e) {
-        const size = Math.max((1000) / 2 / 100, 1)
+        const size = Math.max((1200) / 2 / 100, 1)
 
         mouseLight.style.top = `${e.clientY - mouseLight.clientHeight / 2}px`
         mouseLight.style.left = `${e.clientX - mouseLight.clientWidth / 2}px`
