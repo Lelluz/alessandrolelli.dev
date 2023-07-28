@@ -263,7 +263,7 @@ export default {
         {
           id: 2,
           title: "Digitalieuguali",
-          url: "https://digitalieuguali.it/",
+          url: "http://web.archive.org/web/20230306234031/https://digitalieuguali.it/",
           description: "digitalieuguali.it is the project I created for YOOX. It was a great pleasure to have developed a site that has had an important following in our country, both professionally and humanly.",
           imageName: "digitalieuguali.jpg",
         },
@@ -298,7 +298,7 @@ export default {
         {
           id: 7,
           title: "Cassamutuamipaaf Website (2018 version)",
-          url: "http://www.cassamutuamipaaf.it",
+          url: "http://web.archive.org/web/20230306193745/http://www.cassamutuamipaaf.it/",
           description: "Website development based on PHP and MySQL database.",
           imageName: "cassamutuamipaaf.jpg",
         },
