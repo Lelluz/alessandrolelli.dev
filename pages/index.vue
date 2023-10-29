@@ -122,12 +122,23 @@
             </div>
           </li>
         </ul>
-        <div class="mt-12">
-          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume.pdf">
+        <div class="mt-12 flex justify-between">
+          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume_en.pdf" target="_blank">
             <span>
               <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">View Full </span>
               <span class="whitespace-nowrap">
-                <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">Résumé</span>
+                <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">Résumé (EN)</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            </span>
+          </a>
+          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume_it.pdf" target="_blank">
+            <span>
+              <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">View Full </span>
+              <span class="whitespace-nowrap">
+                <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">Résumé (IT)</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true">
                   <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
                 </svg>
@@ -199,7 +210,7 @@ export default {
           url: "https://www.ynap.com/",
           company: "YNAP",
           jobTitle: "Interface Developer",
-          description: "At YNAP, my journey began as a frontend developer, a role that has shaped my path for nearly three years. During this time, I had the privilege of making substantial contributions to the development and maintenance of renowned luxury e-commerce platforms like Bottega Veneta, Brioni, Yves Saint Laurent, Alaïa, and Dunhill. This experience not only honed my technical expertise in web-related domains but also exposed me to the power of collaborative teamwork through agile workflows.",
+          description: "At YNAP, my journey began as a frontend developer, a role that has shaped my path for nearly three years. During this time, I had the privilege of making substantial contributions to the development and maintenance of renowned luxury e-commerce platforms like Bottega Veneta, Brioni, Yves Saint Laurent, Alaïa, Dunhill and Chloe. This experience not only honed my technical expertise in web-related domains but also exposed me to the power of collaborative teamwork through agile workflows.",
           technologies: [
             {
               id: 1,
