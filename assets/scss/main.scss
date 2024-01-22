@@ -1,0 +1,22 @@
+@use 'colors';
+
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+body {
+  background-color: colors.$black;
+  color: colors.$light-gray;
+}
+
+.active .nav-indicator {
+  width: 4rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240/var(--tw-bg-opacity))
+}
+
+.active .nav-text {
+  --tw-text-opacity: 1;
+  color: rgb(226 232 240/var(--tw-text-opacity))
+}
