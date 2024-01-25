@@ -324,7 +324,7 @@ export default {
         {
           id: 8,
           title: "Orionh Plus UX",
-          url: "https://orionxpro.com/",
+          url: "https://facebook.com/Milkywayhuntersteam/",
           description: "I created and developed for Milkywayhunters the graphics of one of their most popular plugins for Adobe Photoshop, which helps photographers in the post production of night photographs. Adobe Illustrator to sketch the graphics and HTML with CSS to develop it.",
           imageName: "orionhplus.avif",
         },
