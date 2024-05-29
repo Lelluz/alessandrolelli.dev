@@ -123,22 +123,22 @@
           </li>
         </ul>
         <div class="mt-12 flex justify-between">
-          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume_en.pdf" target="_blank">
+          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume_it.pdf" target="_blank">
             <span>
               <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">View Full </span>
               <span class="whitespace-nowrap">
-                <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">Résumé (EN)</span>
+                <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">Résumé (IT)</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true">
                   <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
                 </svg>
               </span>
             </span>
           </a>
-          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume_it.pdf" target="_blank">
+          <a class="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group" aria-label="View Full Résumé" href="/resume_en.pdf" target="_blank">
             <span>
               <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">View Full </span>
               <span class="whitespace-nowrap">
-                <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">Résumé (IT)</span>
+                <span class="border-b border-transparent pb-px transition group-hover:border-sky-300 motion-reduce:transition-none">Résumé (EN)</span>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="ml-1 inline-block h-4 w-4 shrink-0 -translate-y-px transition-transform group-hover:translate-x-2 group-focus-visible:translate-x-2 motion-reduce:transition-none" aria-hidden="true">
                   <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"></path>
                 </svg>
@@ -274,62 +274,69 @@ export default {
       projects: [
         {
           id: 1,
+          title: "UCI Cinemas Meridiana Alerts",
+          url: "https://github.com/Lelluz/uci-cinemas-meridiana-alerts",
+          description: "This project consists of an AWS Lambda Function designed to automatically notify new film schedules at the UCI Cinemas Meridiana cinema in Bologna on a specific Telegram channel",
+          imageName: "uci-cinemas-meridiana-alerts.avif",
+        },
+        {
+          id: 2,
           title: "OFS APIs Chrome Extension",
           url: "https://chrome.google.com/webstore/detail/ofs-apis/becbgejehcfbgcgmjmpegigmilmnfelc",
           description: "This extension is useful for YNAP developers to check the data returned by the api.yoox.biz APIs",
           imageName: "ofs-api.avif",
         },
         {
-          id: 2,
+          id: 3,
           title: "Digitalieuguali",
           url: "http://web.archive.org/web/20230306234031/https://digitalieuguali.it/",
           description: "digitalieuguali.it is the project I created for YOOX. It was a great pleasure to have developed a site that has had an important following in our country, both professionally and humanly.",
           imageName: "digitalieuguali.avif",
         },
         {
-          id: 3,
+          id: 4,
           title: "yDevice Switcher Chrome Extension",
           url: "http://bit.ly/ydevice-switcher",
           description: "I created this simple Chrome extension for my team members in YNAP using Javascript",
           imageName: "y-device-switcher.avif",
         },
         {
-          id: 4,
+          id: 5,
           title: "EAGLEDROID Website",
           url: "https://www.eagledroid.com",
           description: "Development of the project website.",
           imageName: "eagledroid.avif",
         },
         {
-          id: 5,
+          id: 6,
           title: "Modisfill Chrome Extension",
           url: "https://chrome.google.com/webstore/detail/modisfill/jmljfedjknpmlidjhiikbmdfaakfmmff?hl=it",
           description: "Modifill is the Chrome extension that I developed for all Modis and Adecco employees who want to simplify and automate the compilation of their WTC. I developed it to experiment in a practical way the Chrome Extension APIs and the Javascript programming ES6.",
           imageName: "modisfill.avif",
         },
         {
-          id: 6,
+          id: 7,
           title: "Astropanel v3, 5 UX",
           url: "https://astropanel.it/",
           description: "Restyling of versions 3, and 5 of the Astropanel plugin for Photoshop.",
           imageName: "astropanel.avif",
         },
         {
-          id: 7,
+          id: 8,
           title: "Cassamutuamipaaf Website (2018 version)",
           url: "http://web.archive.org/web/20230306193745/http://www.cassamutuamipaaf.it/",
           description: "Website development based on PHP and MySQL database.",
           imageName: "cassamutuamipaaf.avif",
         },
         {
-          id: 8,
+          id: 9,
           title: "Orionh Plus UX",
           url: "https://facebook.com/Milkywayhuntersteam/",
           description: "I created and developed for Milkywayhunters the graphics of one of their most popular plugins for Adobe Photoshop, which helps photographers in the post production of night photographs. Adobe Illustrator to sketch the graphics and HTML with CSS to develop it.",
           imageName: "orionhplus.avif",
         },
         {
-          id: 9,
+          id: 10,
           title: "ITambiente S.r.l Website",
           url: "http://itambiente.com/",
           description: "Development of the company website. It allowed me to approach the development of showcase sites and communication with the customer. I improved me with HTML, CSS using Bootstrap 3 framework.",
