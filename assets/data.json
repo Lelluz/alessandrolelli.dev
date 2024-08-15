@@ -1,0 +1,122 @@
+{
+  "name": "Alessandro Lelli",
+  "jobTitle": "Frontend developer",
+  "intro": "I'm a front-end developer who loves to create things on the web. Passionate about landscape photography, videography, motorbikes and alpine hiking",
+  "bio": "During my high school years, I unearthed a profound passion for the intricate art of website aesthetics, where every opportunity became a catalyst for crafting captivating sites.",
+  "bio2": "Today, I bring that same enthusiasm and creativity to every project I undertake. Whether it's designing sleek user interfaces or implementing captivating animations, I strive to make every website an immersive and visually stunning experience.",
+  "experiences": [
+    {
+      "id": 1,
+      "date": "May 2019 - Present",
+      "url": "https://www.ynap.com/",
+      "company": "YNAP",
+      "jobTitle": "Interface Developer",
+      "description": "At YNAP, my journey began as a frontend developer, a role that has shaped my path for nearly three years. During this time, I had the privilege of making substantial contributions to the development and maintenance of renowned luxury e-commerce platforms like Bottega Veneta, Brioni, Yves Saint Laurent, Alaïa, Dunhill and Chloe. This experience not only honed my technical expertise in web-related domains but also exposed me to the power of collaborative teamwork through agile workflows.",
+      "technologies": [
+        { "id": 1, "name": "HTML5" },
+        { "id": 2, "name": "Javascript ES6" },
+        { "id": 3, "name": "CSS3 - SASS" },
+        { "id": 4, "name": "C# .NET Framework" },
+        { "id": 5, "name": "Web Components - LitElements" }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "April 2018 - March 2019",
+      "url": "https://www.cartsan.it/",
+      "company": "Cartsan Srl",
+      "jobTitle": "IT Customer Support",
+      "description": "In addition to my primary responsibility of providing customer support and troubleshooting medical software, I was fortunate to have my boss recognize my passion for development. This led to an exciting opportunity where I was entrusted with developing an internal management system for the company. Through this experience, I acquired proficiency in PHP programming, utilizing MySQL as a database, and further refining my knowledge of HTML and CSS.",
+      "technologies": [
+        { "id": 1, "name": "PHP" },
+        { "id": 2, "name": "HTML" },
+        { "id": 3, "name": "CSS" }
+      ]
+    },
+    {
+      "id": 3,
+      "date": "June 2015 - July 2015",
+      "url": "http://www.videoarts.eu/",
+      "company": "Videoarts Webdesign",
+      "jobTitle": "IT Intern",
+      "description": "As an intern at Fabio Mosti's Videoarts Webdesign, a small yet impactful company, I had the opportunity to immerse myself in the professional world. Under Fabio's guidance, I delved into the realm of object-oriented programming and embarked on a practical journey. During my tenure, I successfully developed a Java-based management software specifically tailored for a kennel. This invaluable experience further expanded my practical skills and solidified my understanding of software development.",
+      "technologies": [
+        { "id": 1, "name": "Java" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "UCI Cinemas Meridiana Alerts",
+      "url": "https://github.com/Lelluz/uci-cinemas-meridiana-alerts",
+      "description": "This project consists of an AWS Lambda Function designed to automatically notify new film schedules at the UCI Cinemas Meridiana cinema in Bologna on a specific Telegram channel",
+      "imageName": "uci-cinemas-meridiana-alerts.avif"
+    },
+    {
+      "id": 2,
+      "title": "OFS APIs Chrome Extension",
+      "url": "https://chrome.google.com/webstore/detail/ofs-apis/becbgejehcfbgcgmjmpegigmilmnfelc",
+      "description": "This extension is useful for YNAP developers to check the data returned by the api.yoox.biz APIs",
+      "imageName": "ofs-api.avif"
+    },
+    {
+      "id": 3,
+      "title": "Digitalieuguali",
+      "url": "http://web.archive.org/web/20230306234031/https://digitalieuguali.it/",
+      "description": "digitalieuguali.it is the project I created for YOOX. It was a great pleasure to have developed a site that has had an important following in our country, both professionally and humanly.",
+      "imageName": "digitalieuguali.avif"
+    },
+    {
+      "id": 4,
+      "title": "yDevice Switcher Chrome Extension",
+      "url": "http://bit.ly/ydevice-switcher",
+      "description": "I created this simple Chrome extension for my team members in YNAP using Javascript",
+      "imageName": "y-device-switcher.avif"
+    },
+    {
+      "id": 5,
+      "title": "EAGLEDROID Website",
+      "url": "https://www.eagledroid.com",
+      "description": "Development of the project website.",
+      "imageName": "eagledroid.avif"
+    },
+    {
+      "id": 6,
+      "title": "Modisfill Chrome Extension",
+      "url": "https://chrome.google.com/webstore/detail/modisfill/jmljfedjknpmlidjhiikbmdfaakfmmff?hl=it",
+      "description": "Modifill is the Chrome extension that I developed for all Modis and Adecco employees who want to simplify and automate the compilation of their WTC. I developed it to experiment in a practical way the Chrome Extension APIs and the Javascript programming ES6.",
+      "imageName": "modisfill.avif"
+    },
+    {
+      "id": 7,
+      "title": "Astropanel v3, 5 UX",
+      "url": "https://astropanel.it/",
+      "description": "Restyling of versions 3, and 5 of the Astropanel plugin for Photoshop.",
+      "imageName": "astropanel.avif"
+    },
+    {
+      "id": 8,
+      "title": "Cassamutuamipaaf Website (2018 version)",
+      "url": "http://web.archive.org/web/20230306193745/http://www.cassamutuamipaaf.it/",
+      "description": "Website development based on PHP and MySQL database.",
+      "imageName": "cassamutuamipaaf.avif"
+    },
+    {
+      "id": 9,
+      "title": "Orionh Plus UX",
+      "url": "https://facebook.com/Milkywayhuntersteam/",
+      "description": "I created and developed for Milkywayhunters the graphics of one of their most popular plugins for Adobe Photoshop, which helps photographers in the post production of night photographs. Adobe Illustrator to sketch the graphics and HTML with CSS to develop it.",
+      "imageName": "orionhplus.avif"
+    },
+    {
+      "id": 10,
+      "title": "ITambiente S.r.l Website",
+      "url": "http://itambiente.com/",
+      "description": "Development of the company website. It allowed me to approach the development of showcase sites and communication with the customer. I improved me with HTML, CSS using Bootstrap 3 framework.",
+      "imageName": "itambiente.avif"
+    }
+  ],
+  "email": "alelelli.98@gmail.com",
+  "phone": "+39 3406900747"
+}
