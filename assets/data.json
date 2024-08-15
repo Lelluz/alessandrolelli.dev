@@ -7,7 +7,16 @@
   "experiences": [
     {
       "id": 1,
-      "date": "May 2019 - Present",
+      "date": "August 2024 - Present",
+      "url": "https://memooria.org/",
+      "company": "Memooria",
+      "jobTitle": "Frontend Developer",
+      "description": "",
+      "technologies": []
+    },
+    {
+      "id": 2,
+      "date": "May 2019 - July 2024",
       "url": "https://www.ynap.com/",
       "company": "YNAP",
       "jobTitle": "Interface Developer",
@@ -21,7 +30,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": 3,
       "date": "April 2018 - March 2019",
       "url": "https://www.cartsan.it/",
       "company": "Cartsan Srl",
@@ -34,7 +43,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": 4,
       "date": "June 2015 - July 2015",
       "url": "http://www.videoarts.eu/",
       "company": "Videoarts Webdesign",
