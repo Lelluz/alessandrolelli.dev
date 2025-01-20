@@ -8,17 +8,20 @@ export default defineNuxtConfig({
       link: [
         {
           rel: 'preconnect',
-          href: 'https://rsms.me/'
+          href: 'https://rsms.me/',
         },
         {
           rel: 'stylesheet',
-          href: 'https://rsms.me/inter/inter.css'
-        }
+          href: 'https://rsms.me/inter/inter.css',
+        },
       ],
-    }
+    },
   },
   css: ['@/assets/scss/main.scss'],
-  modules: [
-    '@nuxtjs/tailwindcss'
-  ]
-})
+  modules: ['@nuxtjs/tailwindcss'],
+  runtimeConfig: {
+    public: {
+      PUBLIC_GTM_CONTAINER_ID: process.env.PUBLIC_GTM_CONTAINER_ID,
+    },
+  },
+});
